@@ -11,6 +11,21 @@
       }
     ],
     "no-inline-styles": "off",
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]",
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
+        ]
+      }
+    ]
   }
 }

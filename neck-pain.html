@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neck Pain Treatment | Vedant Pain Clinic | Pain Management Clinic in Faridabad</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+
+
+ <style>
+        /* Main Content */
+        .content-section {
+            padding: 80px 0;
+            overflow: visible;
+            background-color: white;
+        }
+
+        .content-section h4 {
+            text-align: left;
+            /* color: var(--primary); */
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 20px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: var(--accent-cyan);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.3s ease;
+        }
+
+        .about-card:hover {
+            border-color: var(--accent-light-cyan);
+            box-shadow: 0 10px 30px rgba(13, 115, 119, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .about-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .about-card h5 {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .about-card i {
+            /* color: var(--light-purple); */
+            /* font-size: 1.2rem; */
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, rgba(13, 115, 119, 0.05) 0%, rgba(20, 145, 155, 0.05) 100%);
+            border-left: 4px solid var(--accent-cyan);
+            /* box-shadow: 0 10px 30px rgba(13, 115, 119, 0.2); */
+            padding: 2rem;
+            border-radius: 20px;
+            /* margin: 2rem 0; */
+        }
+
+        .info-box h3 {
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .info-box p {
+            color: var(--neutral-dark);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        /* .cta-section {
+  background: linear-gradient(135deg,
+      var(--primary-purple) 0%,
+      var(--primary-purple-light) 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+} */
+
+        .btn-book {
+            background: var(--primary-purple);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-book:hover {
+            background: var(--light-purple);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+            color: white;
+        }
+
+        /* Accordion */
+        .accordion-button {
+            background: white;
+            color: var(--primary-purple);
+            font-weight: 600;
+            border: 1px solid #e9ecef;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+            padding: 1.2rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: linear-gradient(135deg,
+                    rgba(13, 115, 119, 0.1) 0%,
+                    rgba(20, 145, 155, 0.1) 100%);
+            color: var(--primary-purple);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            border-color: var(--primary-purple);
+            box-shadow: 0 0 0 0.25rem rgba(13, 115, 119, 0.25);
+        }
+
+        .accordion-body {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-top: none;
+            border-radius: 20px;
+            color: var(--primary-purple);
+            line-height: 1.8;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-purple);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: white;
+            box-shadow: 0 10px 30px rgba(13, 115, 119, 0.1);
+            transform: translateY(-5px);
+        }
+
+
+        .feature-item h4 {
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item p {
+            color: var(black);
+            font-size: 0.95rem;
+        }
+
+        /* Doctor Section */
+        .doctor-content {
+            background: var(--accent-light-cyan);
+            color: rgb(128, 128, 128);
+            padding: 30px 30px 0;
+            border-radius: 20px;
+            /* margin: 3rem 0; */
+        }
+
+        .doctor-section {
+            padding: 10px 0 80px;
+            background-color: white;
+        }
+
+        .doctor-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .doctor-info p {
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+
+        .doctor-section h4 {
+            text-align: left;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/imgi_1_logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conditions
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
+                            <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
+                            <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
+                            <li><a class="dropdown-item" href="knee-pain.html">Knee pain</a></li>
+                            <li><a class="dropdown-item" href="buttock-pain.html">Buttock Pain</a></li>
+                            <li><a class="dropdown-item" href="shoulder-pain.html">Shoulder Pain</a></li>
+                            <li><a class="dropdown-item" href="pain-due-to-vascular-diseases.html">Pain Due To Vascular
+                                    Diseases</a></li>
+                            <li><a class="dropdown-item" href="hip-pain.html">Hip Pain</a></li>
+                            <li><a class="dropdown-item" href="cancer-pain-and-palliative-care.html">Cancer Pain And
+                                    Palliative Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Treatments
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
+                                    Gasserian Ganglion RFA</a></li>
+                            <li><a class="dropdown-item" href="">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="">Facet</a></li>
+                            <li><a class="dropdown-item" href="">Transforaminal Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="">Sympathectomy Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="">Sacroiliac joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="">Knee Genicular Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="">Shoulder Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item" href="">Musculoskeletal Trigger Point Release</a></li>
+                            <li><a class="dropdown-item" href="">Provocative Discography</a></li>
+                            <li><a class="dropdown-item" href="">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a href="#" class="book-btn ms-lg-3">
+                            Book Appointment
+                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-block">
+                <a href="#" class="book-btn ms-lg-3">
+                    Book Appointment
+                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1>Neck Pain Treatment</h1>
+                <p class="hero-breadcrumb">Home / Neck Pain</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Content -->
+    <section class="content-section" id="services">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Services -->
+                <div class="col-lg-3 mb-4 order-2 order-md-2 order-lg-1">
+                    <div class="sticky-top" style="top: 20px;">
+
+                        <h4>Conditions Treated</h4>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Neck Pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="trigeminal-neuralgia.html" style="text-decoration: none;">
+                                <h5>Trigeminal Neuralgia</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Back Pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Knee pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Buttock Pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Shoulder Pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Pain Due To Vascular Diseases</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Hip Pain</h5>
+                            </a>
+                        </div>
+                        <div class="about-card">
+                            <a href="neck-pain.html" style="text-decoration: none;">
+                                <h5>Cancer Pain And Palliative Care</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9 order-1 order-md-1 order-lg-2 pb-3 mb-5 mb-lg-0" style="overflow: hidden;">
+                    <div class="info-box" data-aos="fade-left">
+                        <h3>What is Neck Pain?</h3>
+                        <p>Neck pain is a common condition that involves discomfort or pain in the neck area, which
+                            includes the muscles, nerves, vertebrae, and discs of the cervical spine. It can range from
+                            a mild, nagging discomfort to severe, debilitating pain that affects daily activities. Neck
+                            pain may be acute, lasting a few days to weeks, or chronic, persisting for several months or
+                            longer.</p> <br>
+
+                        <strong>Common Causes of Neck Pain</strong> <br><br>
+                        <ol>
+                            <li>Muscle Strain: Overuse, poor posture, or prolonged activities like working at a computer
+                                or looking down at a smartphone can strain neck muscles, leading to pain.</li>
+                            <li>Degenerative Disc Disease: Age-related wear and tear on the cervical spine can lead to
+                                conditions like osteoarthritis or herniated discs, which can cause neck pain.</li>
+                            <li>Injuries: Age-related wear and tear on the cervical spine can lead to conditions like
+                                osteoarthritis or herniated discs, which can cause neck pain.</li>
+                            <li>Nerve Compression: Herniated discs or bone spurs can press on the nerves branching out
+                                from the spinal cord, causing pain that radiates down the arm (cervical radiculopathy).
+                            </li>
+                            <li>Poor Posture: Slouching, holding your head in a forward position, or sleeping in awkward
+                                positions can lead to muscle imbalances and pain.</li>
+                            <li>Stress and Tension: Emotional stress and tension can cause muscles to tighten, leading
+                                to neck pain.</li>
+                            <li>Medical Conditions: Conditions such as fibromyalgia, rheumatoid arthritis, or infections
+                                can contribute to neck pain.</li>
+                        </ol> <br>
+
+                        <strong>Common Symptoms of Neck Pain</strong> <br><br>
+                        <ol>
+                            <li>Stiffness: Difficulty moving the neck, especially when turning the head from side to
+                                side.</li>
+                            <li>Sharp or Dull Pain: Pain can range from a sharp, stabbing sensation to a constant, dull
+                                ache.</li>
+                            <li>Radiating Pain: Pain that spreads to the shoulders, arms, or upper back.</li>
+                            <li>Muscle Spasms: Sudden, involuntary contractions of the neck muscles.</li>
+                            <li>Headaches: Pain originating in the neck that leads to headaches, often referred to as
+                                cervicogenic headaches.</li>
+                            <li>Reduced Range of Motion: Difficulty in moving the neck fully due to pain or stiffness.
+                            </li>
+                            <li>Numbness or Tingling: Sensations in the arms or hands caused by nerve compression.</li>
+                        </ol>
+
+
+                        <p style="margin-top: 1rem;"><strong>Understanding the common causes and symptoms of neck pain
+                                can help in identifying the best treatment approach and preventive measures. If neck
+                                pain persists or worsens, it's important to seek medical advice for proper diagnosis and
+                                management.</strong></p>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <!-- <div id="faq" style="margin-top: 3rem;">
+                        <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 2rem;" data-aos="fade-up">
+                            Frequently Asked
+                            Questions</h3>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0" data-aos="fade-up" data-aos-delay="100">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        Different Aspects Of Egg Donation
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Physical Characteristics <br><br>
+
+                                        <ul>
+                                            <li>Height</li>
+                                            <li>Build Weight</li>
+                                            <li>Color Of The Eyes</li>
+                                            <li>Color Of The Hair</li>
+                                            <li>Skin Color</li>
+                                        </ul>
+
+                                        <br><br>
+
+                                        Social History <br><br>
+
+                                        <ul>
+                                            <li>Date Of Birth</li>
+                                            <li>Country Of Birth</li>
+                                            <li>Nationality</li>
+                                            <li>Qualification</li>
+                                            <li>Occupation</li>
+                                            <li>Marital Status</li>
+                                            <li>Numbers Of Deliveries</li>
+                                            <li>Interests & Hobbies</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0" data-aos="fade-up" data-aos-delay="200">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Issues For Women Considering Egg Donation
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Donor Age <br><br>
+
+                                        The age of the female donor listed with us is between 20 – 28 years of age
+                                        at the time of egg collection. Potential Donors with this age may be used
+                                        with appropriate consultation with the recipients. <br><br>
+
+                                        Exclusion criteria-Donors will be excluded if they have a personal or family
+                                        history of a number of diseases including: <br><br>
+
+                                        <ul>
+                                            <li>Venereal Disease</li>
+                                            <li>Hepatitis B & C</li>
+                                            <li>Acquired Immune Deficiency Syndrome (AIDS)</li>
+                                            <li>Sickle Cell Trait</li>
+                                            <li>Thalassaemia Trait</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0" data-aos="fade-up" data-aos-delay="300">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Health / Lifestyle
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Donors must be in good health and are required to sign a life-style
+                                        declaration form. Donors and their partners (if applicable) will be screened
+                                        for Hepatitis B, Hepatitis C, HIV (AIDS) and venereal disease prior to the
+                                        donation.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0" data-aos="fade-up" data-aos-delay="400">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Egg Donors - Clinical Evaluation and Counseling
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Medical Consultation <br><br>
+
+                                        Potential egg donors have to undergo medical consultations. At first visit
+                                        the specialist takes a medical history and get blood tests like blood
+                                        group,vdrl,HIV,hepatitis B antigen,HCV , LH, E2,TSH,AMH and a vaginal
+                                        ultrasound for antral follicular count,size of the ovaries ,any pathology
+                                        like ovarian cyst or endometriosis in the ovaries. <br><br>
+
+                                        At the second visit the test results are reviewed and a decision is made on
+                                        medical grounds if the potential donor can continue.In case of any
+                                        discrepancy, a meeting is arranged between the donor & the recipient .The
+                                        consent forms are signed by both parties.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section class="doctor-section">
+        <div class="container">
+            <div class="doctor-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-md-2 order-lg-1">
+                        <div class="doctor-info">
+                            <h3>Meet Our Specialist</h3>
+                            <h4 style="margin-bottom: 1rem; font-weight: 600;">Dr. Mohit Gupta</h4>
+                            <p>Dr. Mohit Gupta is a distinguished Interventional Pain Physician and Pain Management Specialist dedicated to helping patients overcome chronic pain and enhance their quality of life. With a wealth of experience in diagnosing and treating complex pain conditions, Dr. Gupta combines cutting-edge medical techniques with compassionate care to deliver personalized treatment plans tailored to each patient's unique needs.</p>
+                            <p style="margin-top: 1rem;">At Vedant Pain Management Clinic, we are dedicated to providing comprehensive, patient-centered care for individuals dealing with chronic pain. Our team of specialists utilizes the latest techniques and therapies to help you regain control of your life and find relief from pain.</p>
+                            <!-- <div class="social-links">
+                                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-md-1 order-lg-2 mb-4 mb-lg-0">
+                        <div>
+                            <img src="images/pngimg.com - doctor_PNG16034.png" alt="" class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+   <footer class="footer-section pt-5 pb-3">
+        <div class="container-xl">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Vedant Clinic</h5>
+                    <p class="footer-text">Delivering excellence in pain management with compassion and expertise since
+                        2009.</p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
+                            class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/vedant-pain-management-clinic/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/vedantpainclinic/#" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Conditions</h5>
+                    <ul class="footer-links">
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                        <li><a href="neck-pain.html">Neck Pain</a></li>
+                        <li><a href="buttock-pain.html">Buttock Pain</a></li>
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Contact</h5>
+                    <p class="footer-text">
+                        <strong>Phone:</strong> +91 8171244512<br>
+                        <strong>Email:</strong> info@vedantpainclinic.com<br>
+                        <strong>Hours:</strong> 9 AM - 7 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <p class="footer-copyright text-center">&copy; 2025 Vedant Pain Management Clinic. All rights
+                        reserved. Designed & Developed By Brandingwaale Webtech</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
