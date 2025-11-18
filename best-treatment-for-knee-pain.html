@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Treatment Is Best for Knee Pain ? | Vedant Pain Clinic | Pain Management Clinic in Faridabad
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: inline-flex;
+        }
+
+        .breadcrumb-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .blog-details-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.8s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .blog-head-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            position: relative;
+            /* padding-left: 1.5rem; */
+        }
+
+        /* .blog-head-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 10px;
+} */
+
+        .information-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .information-box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .information-box h5 {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* .sidebar {
+  position: sticky;
+  top: 100px;
+} */
+
+        .sidebar-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card i {
+            /* color: var(--primary); */
+        }
+
+        .sidebar-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            /* color: var(--dark); */
+        }
+
+        .toc-item {
+            padding: 0.7rem 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover,
+        .toc-item.active {
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+            border-left-color: var(--accent-cyan);
+            transform: translateX(5px);
+        }
+
+        .cta-container {
+            background: var(--accent-cyan);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: ;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .cta-btn {
+            background: white;
+            color: var(--accent-cyan);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient);
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            color: var(--secondary);
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        ul li {
+            margin: 0.8rem 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            margin: 2rem 0;
+        }
+    </style>
+
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/imgi_1_logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conditions
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
+                            <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
+                            <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
+                            <li><a class="dropdown-item" href="knee-pain.html">Knee pain</a></li>
+                            <li><a class="dropdown-item" href="buttock-pain.html">Buttock Pain</a></li>
+                            <li><a class="dropdown-item" href="shoulder-pain.html">Shoulder Pain</a></li>
+                            <li><a class="dropdown-item" href="pain-due-to-vascular-diseases.html">Pain Due To Vascular
+                                    Diseases</a></li>
+                            <li><a class="dropdown-item" href="hip-pain.html">Hip Pain</a></li>
+                            <li><a class="dropdown-item" href="cancer-pain-and-palliative-care.html">Cancer Pain And
+                                    Palliative Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Treatments
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
+                                    Gasserian Ganglion RFA</a></li>
+                            <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="facet.html">Facet</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item" href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a></li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                            Book Appointment
+                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-block">
+                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                    Book Appointment
+                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1 data-aos="fade-up" data-aos-delay="200">Best Treatment for Knee Pain</h1>
+                <nav data-aos="fade-up" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active text-white">Best Treatment for Knee Pain</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" style="overflow: visible;">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar sticky-top" style="top:10px;" data-aos="fade-right" data-aos-delay="200">
+                        <!-- Table of Contents -->
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-title" data-aos="fade-right" data-aos-delay="300">Latest Blogs</h3>
+                            <!-- <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i> Cancer Pain Treatment
+                            </div> -->
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="400">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;"
+                                    href="cancer-pain-and-palliative-care.html">
+                                    Cancer Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="500">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="fastest-way-to-relieve-hip-pain.html">
+                                    Fastest Way to Relieve Hip Pain
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="600">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="lower-back-pain-treatment-in-faridabad.html">
+                                    Lower Back Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="700">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="best-medicine-for-shoulder-pain.html">
+                                    Best Medicine for Shoulder Pain
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="800">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="">
+                                    Best Neck Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="900">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;" href="">
+                                    Back Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1000">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;" href="">
+                                    Top Pain Management Clinic
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1100">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="">
+                                    How Vedant Pain Management Clinic Helps You Get Back on Track
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Info -->
+                        <div class="sidebar-card" data-aos="fade-right" data-aos-delay="1500">
+                            <h3 class="sidebar-title">Quick Information</h3>
+                            <div class="mb-3">
+                                <i class="fas fa-clock me-2"></i>
+                                <strong>Reading Time:</strong> 8 min
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-calendar me-2"></i>
+                                <strong>Last Updated:</strong> October 2025
+                            </div>
+                            <div>
+                                <i class="fas fa-user-md me-2"></i>
+                                <strong>Expert:</strong> Dr. Mohit Gupta
+                            </div>
+                        </div>
+
+                        <!-- Contact Card -->
+                        <!-- <div class="sidebar-card">
+                            <h3 class="sidebar-title" style="color: white;">Contact Us</h3>
+                            <p>Have questions about ovarian cyst surgery?</p>
+                            <button class="cta-btn" style="width: 100%;">Get in Touch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8">
+                    <div class="blog-details-card" data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="blog-head-title" id="high">Which Treatment Is Best for Knee Pain ? | Vedant Pain
+                            Clinic</h2>
+
+                        <p class="">Knee pain is one of the most common problems affecting people of all age
+                            groups—whether you are a sportsperson, an office worker, or a senior citizen. From sudden
+                            injuries to long-term conditions like arthritis, knee pain can limit mobility, disrupt daily
+                            routines, and affect overall quality of life. <br><br> The big question most patients ask
+                            is:
+                            <strong>Which treatment is best for knee pain ?</strong> <br><br>
+
+                            At Vedant Pain Management Clinic, Faridabad, we believe there’s no single answer. The right
+                            solution depends on the root cause, severity of pain, and individual needs. Let’s explore
+                            the best treatment options, including advanced medical care, home remedies, and modern
+                            therapies that bring relief.
+                        </p>
+
+                        <h2 class="blog-head-title" id="meet">Common Causes of Knee Pain</h2>
+                        <p>Before deciding on treatment, it’s important to understand why the knee hurts. Common causes
+                            include:</p>
+                        <ul>
+                            <li><strong>Osteoarthritis:</strong> Age-related wear and tear of knee cartilage.</li>
+                            <li><strong>Sports Injuries:</strong> Ligament tears, meniscus injuries, or sprains.</li>
+                            <li><strong>Overuse Injuries:</strong> Repeated strain from running, climbing, or heavy
+                                lifting.</li>
+                            <li><strong>Inflammation:</strong> Conditions like bursitis or tendinitis.</li>
+                            <li><strong>Trauma:</strong> Accidents or falls causing fractures or dislocations.</li>
+                        </ul>
+
+                        <p>Knowing the cause helps doctors at Vedant Pain Management Clinic design a personalized
+                            treatment plan.</p>
+
+
+
+
+                        <h2 class="blog-head-title" id="process">Medical Treatments for Knee Pain</h2>
+
+                        <p>At Vedant Pain Management Clinic, Faridabad, we focus on non-surgical, minimally invasive
+                            treatments that target the root cause of knee pain and help patients avoid unnecessary
+                            surgery.</p>
+
+                        <ol>
+                            <li><strong>Genicular Nerve Radiofrequency Ablation (RFA):</strong> A breakthrough in modern
+                                pain management, this procedure targets the nerves causing knee pain. With advanced
+                                cooled RFA technology, patients experience long-lasting relief, especially those
+                                suffering from arthritis or chronic knee pain.</li>
+                            <li><strong>Platelet-Rich Plasma (PRP) Therapy</strong> PRP uses the patient’s own blood,
+                                processed to extract platelets rich in healing factors. Injecting PRP into the knee
+                                promotes tissue repair, reduces inflammation, and supports recovery.</li>
+                            <li><strong>Steroid & Viscosupplement Injections</strong> For patients with swelling and
+                                stiffness, these injections reduce inflammation and improve mobility. Hyaluronic acid
+                                (gel injections) also lubricates the knee joint.</li>
+                            <li><strong>Pain Relief Medications</strong> Sometimes, medications like NSAIDs or muscle
+                                relaxants are prescribed to manage pain while combining with other therapies.</li>
+                            <li><strong>Physiotherapy & Lifestyle Modification</strong> Strengthening exercises, posture
+                                correction, and weight management play a major role in long-term recovery. <br><br>
+
+                                The biggest advantage at Vedant Pain Management Clinic is that these treatments are
+                                non-surgical, safe, and effective, allowing patients to resume their routine quickly.
+                            </li>
+                        </ol>
+
+
+                        <h2 class="blog-head-title" id="process">Knee Pain Home Remedies</h2>
+                        <p>While professional care is essential, home remedies can provide additional support and help
+                            manage mild pain. Here are some trusted options:</p>
+
+                        <ol>
+                            <li><strong>Hot & Cold Therapy:</strong> Ice packs reduce swelling, while heat packs relax
+                                stiff muscles.</li>
+                            <li><strong>Gentle Exercises:</strong> Walking, swimming, and stretching improve flexibility
+                                without straining the joint.</li>
+                            <li><strong>Turmeric & Ginger:</strong> Known for their anti-inflammatory properties, they
+                                can be added to daily meals.</li>
+                            <li><strong>Massage with Warm Oil: </strong> Helps improve blood circulation and reduces
+                                stiffness.</li>
+                            <li><strong>Rest & Elevation:</strong> Allowing the knee to rest and keeping it elevated
+                                reduces pressure on the joint.</li>
+                        </ol>
+                        <p>While knee pain home remedies offer temporary relief, chronic pain should never be ignored.
+                            It’s always best to consult an expert.</p>
+
+                        <h2 class="blog-head-title" id="process">Do Knee Pain Relief Patches Work?</h2>
+                        <p>You may have seen or used a knee pain relief patch—an adhesive patch infused with
+                            pain-relieving herbs or medicines. These patches provide temporary comfort by delivering
+                            medicine through the skin, reducing inflammation and stiffness.
+                            <br><br>
+
+                            However, patches are not a permanent solution. They work best as a short-term aid and should
+                            be combined with proper diagnosis and treatment. At Vedant Pain Management Clinic, we often
+                            guide patients on safe use of such patches alongside medical care.
+                        </p>
+
+
+                        <h2 class="blog-head-title" id="process">Which Treatment Is Best ?</h2>
+                        <p>There’s no one-size-fits-all answer. The best treatment for knee pain depends on:</p>
+                        <ul>
+                            <li>Cause of pain (arthritis, injury, inflammation, etc.)</li>
+                            <li>Age & activity level</li>
+                            <li>Severity & duration of symptoms</li>
+                            <li>Patient’s overall health</li>
+                            <li>Convenient location in<strong> Faridabad</strong></li>
+                        </ul>
+
+                        <p>For chronic knee pain, advanced treatments like Genicular Nerve RFA or PRP therapy provide
+                            long-term relief. <br>
+                            For mild or early pain, lifestyle changes, home remedies, and physiotherapy may be enough.
+                            <br>
+                            For temporary relief, a knee pain relief patch can help but should not replace medical
+                            treatment. <br><br>
+
+                            That’s why consulting a specialist at Vedant Pain Management Clinic in Faridabad ensures
+                            that you receive the right diagnosis and customized care plan.
+                        </p>
+
+
+                        <h2 class="blog-head-title" id="consult">Why Choose Vedant Pain Management Clinic, Faridabad ?
+                        </h2>
+                        <p>Led by Dr. Mohit Gupta, an experienced pain medicine specialist <br>
+
+                            Focus on non-surgical, minimally invasive treatments <br>
+
+                            Advanced technology like Cooled RFA & PRP Therapy <br>
+
+                            Compassionate, patient-centered approach <br>
+
+                            Convenient location in Faridabad with modern facilities <br>
+
+                            Our goal is simple: help patients live pain-free without unnecessary surgery.</p>
+
+                        <h2 class="blog-head-title" id="consult">Final Thoughts</h2>
+                        <p>If you’re struggling with knee pain, don’t ignore it. The right treatment can restore
+                            mobility, reduce pain, and improve your quality of life. Whether it’s knee pain home
+                            remedies, a knee pain relief patch, or advanced treatments like RFA and PRP therapy, the key
+                            is finding what works best for your condition. <br><br>
+
+                            At Vedant Pain Management Clinic, Faridabad, we combine expert diagnosis, advanced
+                            technology, and personalized care to ensure every patient finds lasting relief.</p>
+
+
+
+                        <!-- Tags -->
+                        <div class="mt-4">
+                            <span class="tag">Best Pain Management Clinic In Faridabad</span>
+                            <span class="tag">Top Pain Treatments In Faridabad</span>
+                            <!-- <span class="tag"></span>
+                            <span class="tag">Laparoscopy</span> -->
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="cta-container" data-aos="fade-up" data-aos-delay="100">
+                        <h2>Need Expert Consultation ?</h2>
+                        <p class="mb-4">Schedule an appointment with Dr. Mohit Gupta for personalized care and
+                            treatment
+                        </p>
+                        <a href="contact.html">
+                            <button class="cta-btn">Book Appointment</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <footer class="footer-section pt-5 pb-3">
+        <div class="container-xl">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/imgi_1_logo.png" alt="" class="mb-3">
+                        </a>
+                    </div>
+                    <p class="footer-text">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive, patient-centered care for individuals dealing with chronic pain.</p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
+                            class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/vedant-pain-management-clinic/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/vedantpainclinic/#" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Conditions</h5>
+                    <ul class="footer-links">
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                        <li><a href="neck-pain.html">Neck Pain</a></li>
+                        <li><a href="buttock-pain.html">Buttock Pain</a></li>
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Contacts</h5>
+                    <p class="footer-text">
+                        <strong>Phone:</strong> +91 8171244512<br>
+                        <strong>Email:</strong> care@vedantpainclinic.com<br>
+                        <strong>Hours:</strong> 9 AM - 7 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <p class="footer-copyright text-center">&copy; 2025 Vedant Pain Management Clinic. All rights
+                        reserved. Designed & Developed By Brandingwaale Webtech</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

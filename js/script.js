@@ -56,15 +56,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })();
 
-    // ===== TESTIMONIAL SLIDER (kept, but removed animations) =====
+    // ===== TESTIMONIAL SLIDER WITH DRAG SUPPORT =====
     (function testimonials() {
-        const track = document.getElementById('testimonialsTrack');
+        const track = document.getElementById("testimonialsTrack");
         if (!track) return;
 
-        let cards = safeQueryAll('.testimonial-card', track);
-        let currentSlide = 0;
-        let autoSlideInterval = null;
+        const cards = Array.from(track.children);
+        let index = 0;
         let cardWidth = 0;
+        let autoSlide = null;
+
+        // DRAG VARIABLES
+        let isDown = false;
+        let startX, scrollLeft;
 
         function getCardsPerView() {
             const w = window.innerWidth;
@@ -73,80 +77,123 @@ document.addEventListener('DOMContentLoaded', function () {
             return 3;
         }
 
-        function updateCardList() {
-            cards = safeQueryAll('.testimonial-card', track);
+        function updateCardWidth() {
+            const first = track.querySelector(".testimonial-card");
+            if (!first) return;
+            cardWidth = first.offsetWidth + 20; // gap
         }
 
+        // DUPLICATE CARDS FOR INFINITE LOOP
         function cloneCards() {
-            const existingClones = track.querySelectorAll('.clone');
-            existingClones.forEach(c => c.remove());
+            const clones = track.querySelectorAll(".clone");
+            clones.forEach(c => c.remove());
 
-            const cloneCount = Math.max(0, Math.min(cards.length, getCardsPerView()));
-            for (let i = 0; i < cloneCount; i++) {
-                const clone = cards[i].cloneNode(true);
-                clone.classList.add('clone');
+            const need = getCardsPerView();
+            for (let i = 0; i < need; i++) {
+                let clone = cards[i].cloneNode(true);
+                clone.classList.add("clone");
                 track.appendChild(clone);
             }
         }
 
-        function updateCardWidth() {
-            if (!cards.length) {
-                cardWidth = 0;
-                return;
-            }
-            cardWidth = (cards[0].offsetWidth || 0) + 20;
+        function slideTo(i, animate = true) {
+            track.style.transition = animate ? "transform 0.6s ease" : "none";
+            track.style.transform = `translateX(-${i * cardWidth}px)`;
         }
 
-        function slideTestimonials() {
-            if (!cardWidth || !cards.length) return;
-            currentSlide++;
-            const cardsPerView = getCardsPerView();
+        function nextSlide() {
+            index++;
+            slideTo(index);
 
-            track.style.transition = 'transform 0.6s ease';
-            track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
-
-            if (currentSlide >= cards.length) {
+            if (index >= cards.length) {
                 setTimeout(() => {
-                    track.style.transition = 'none';
-                    track.style.transform = 'translateX(0)';
-                    currentSlide = 0;
+                    index = 0;
+                    slideTo(index, false);
                 }, 600);
             }
         }
 
-        function startAutoSlide() {
-            stopAutoSlide();
-            autoSlideInterval = setInterval(slideTestimonials, 3000);
+        function startAuto() {
+            stopAuto();
+            autoSlide = setInterval(nextSlide, 2000);
         }
 
-        function stopAutoSlide() {
-            if (autoSlideInterval) clearInterval(autoSlideInterval);
+        function stopAuto() {
+            if (autoSlide) clearInterval(autoSlide);
         }
 
-        function setupSlider() {
-            updateCardList();
+        // DRAG HANDLERS
+        function dragStart(e) {
+            isDown = true;
+            stopAuto();
+
+            startX = e.pageX || e.touches[0].pageX;
+            scrollLeft = index * cardWidth;
+            track.style.transition = "none";
+        }
+
+        function dragMove(e) {
+            if (!isDown) return;
+
+            let x = e.pageX || e.touches[0].pageX;
+            let walk = x - startX;
+
+            track.style.transform = `translateX(${walk - scrollLeft}px)`;
+        }
+
+        function dragEnd(e) {
+            if (!isDown) return;
+            isDown = false;
+
+            let x = e.pageX || (e.changedTouches ? e.changedTouches[0].pageX : 0);
+            let walk = x - startX;
+
+            // If dragged enough → move slide
+            if (walk < -50) index++;
+            else if (walk > 50) index--;
+
+            if (index < 0) index = 0;
+            if (index >= cards.length) index = cards.length - 1;
+
+            slideTo(index);
+            startAuto();
+        }
+
+        function setup() {
             cloneCards();
             updateCardWidth();
-            currentSlide = 0;
-            track.style.transition = 'none';
-            track.style.transform = 'translateX(0)';
-            setTimeout(startAutoSlide, 50);
+            index = 0;
+            slideTo(index, false);
+            startAuto();
         }
 
+        // RESIZE HANDLER
         let resizeTimer;
-        window.addEventListener('resize', () => {
+        window.addEventListener("resize", () => {
             clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(setupSlider, 150);
+            resizeTimer = setTimeout(setup, 150);
         });
 
-        const testimonialsContainer = document.querySelector('.testimonials-container');
-        if (testimonialsContainer) {
-            testimonialsContainer.addEventListener('mouseenter', stopAutoSlide);
-            testimonialsContainer.addEventListener('mouseleave', startAutoSlide);
+        // Mouse Events
+        track.addEventListener("mousedown", dragStart);
+        window.addEventListener("mousemove", dragMove);
+        window.addEventListener("mouseup", dragEnd);
+
+        // Touch Events
+        track.addEventListener("touchstart", dragStart);
+        track.addEventListener("touchmove", dragMove);
+        track.addEventListener("touchend", dragEnd);
+
+        // Hover Stop Auto Slide
+        const container = document.querySelector(".testimonials-container");
+        if (container) {
+            container.addEventListener("mouseenter", stopAuto);
+            container.addEventListener("mouseleave", startAuto);
         }
 
-        setupSlider();
+        setup();
     })();
+
 
     // ===== CONTACT FORM (unchanged, only animations removed) =====
     (function contactForm() {
@@ -201,83 +248,30 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 1500);
         });
     })();
-
-    // ===== VIDEO GALLERY SECTION (animations removed) =====
-    (function videoGallery() {
-        const playButtons = safeQueryAll('.play-btn');
-        const loadMoreBtn = safeQuery('.load-more-btn');
-
-        playButtons.forEach(button => {
-            button.addEventListener('click', function (e) {
-                e.preventDefault();
-                alert('Playing video...');
-            });
-        });
-
-        if (loadMoreBtn) {
-            loadMoreBtn.addEventListener('click', function () {
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
-                setTimeout(() => {
-                    this.innerHTML = 'Load More Videos <i class="fas fa-arrow-right ms-2"></i>';
-                    alert('More videos loaded!');
-                }, 1500);
-            });
-        }
-    })();
-
-    // ===== SERVICE DETAILS PAGE =====
-    (function serviceDetails() {
-        let currentGalleryIndex = 1;
-        const galleryImages = [
-            { id: 1, src: '/placeholder.svg?height=300&width=400', alt: 'Gallery 1' },
-            { id: 2, src: '/placeholder.svg?height=300&width=400', alt: 'Gallery 2' },
-            { id: 3, src: '/placeholder.svg?height=300&width=400', alt: 'Gallery 3' },
-            { id: 4, src: '/placeholder.svg?height=300&width=400', alt: 'Gallery 4' }
-        ];
-
-        window.nextGallery = function () {
-            currentGalleryIndex++;
-            if (currentGalleryIndex > galleryImages.length) currentGalleryIndex = 1;
-            updateGallery();
-        };
-
-        window.previousGallery = function () {
-            currentGalleryIndex--;
-            if (currentGalleryIndex < 1) currentGalleryIndex = galleryImages.length;
-            updateGallery();
-        };
-
-        function updateGallery() {
-            const container = document.getElementById('galleryContainer');
-            if (!container) return;
-            const images = container.querySelectorAll('img');
-            if (!images.length) return;
-
-            const startIndex = (currentGalleryIndex - 1) % galleryImages.length;
-            const secondIndex = (startIndex + 1) % galleryImages.length;
-
-            images[0].src = galleryImages[startIndex].src;
-            images[0].alt = galleryImages[startIndex].alt;
-
-            if (images[1]) {
-                images[1].src = galleryImages[secondIndex].src;
-                images[1].alt = galleryImages[secondIndex].alt;
-            }
-
-            const idxEl = document.getElementById('galleryIndex');
-            if (idxEl) idxEl.textContent = currentGalleryIndex;
-        }
-
-        window.switchService = function (element, serviceName) {
-            const navItems = safeQueryAll('.nav-item');
-            navItems.forEach(item => item.classList.remove('active'));
-            if (element) element.classList.add('active');
-
-            console.log(`Switched to: ${serviceName}`);
-        };
-
-        window.scrollToContact = function () {
-            alert('Thank you for your interest! Contact form would appear here.');
-        };
-    })();
 });
+
+var gallerySwiperInstance = new Swiper(".gallery-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    speed: 600,
+    autoplay: {
+        delay: 2600,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".gallery-next",
+        prevEl: ".gallery-prev",
+    },
+    grabCursor: true,
+    resistanceRatio: 0.45,   // smoother swipe
+    watchSlidesProgress: true,
+    observer: true,          // prevents reflow crash
+    observeParents: true,    // prevents jitter when section loads
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 2 },
+        992: { slidesPerView: 3 }
+    }
+});
+

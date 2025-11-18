@@ -17,14 +17,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
-    <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
                 <a href="index.html">
@@ -72,18 +73,29 @@
                         <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
                             <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
                                     Gasserian Ganglion RFA</a></li>
-                            <li><a class="dropdown-item" href="">Cervical Epidural</a></li>
-                            <li><a class="dropdown-item" href="">Facet</a></li>
-                            <li><a class="dropdown-item" href="">Transforaminal Epidural Adhesiolysis</a></li>
-                            <li><a class="dropdown-item" href="">Sympathectomy Block / Neurolysis / RFA</a></li>
-                            <li><a class="dropdown-item" href="">Sacroiliac joint Injection / Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
-                            <li><a class="dropdown-item" href="">Knee Genicular Nerves Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="">Shoulder Capsule Release Adhesiolysis RFA</a></li>
-                            <li><a class="dropdown-item" href="">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
-                            <li><a class="dropdown-item" href="">Musculoskeletal Trigger Point Release</a></li>
-                            <li><a class="dropdown-item" href="">Provocative Discography</a></li>
-                            <li><a class="dropdown-item" href="">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                            <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="facet.html">Facet</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal
+                                    Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy
+                                    Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac
+                                    joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar
+                                    Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular
+                                    Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder
+                                    Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled
+                                    Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item"
+                                    href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point
+                                    Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a>
+                            </li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal
+                                    Cord Stimulator and Intrathecal Pump</a></li>
                         </ul>
                     </li>
 
@@ -94,7 +106,7 @@
 
                 <ul class="navbar-nav d-lg-none">
                     <li class="nav-item">
-                        <a href="#" class="book-btn ms-lg-3">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
                             Book Appointment
                             <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
@@ -104,7 +116,7 @@
             </div>
 
             <div class="d-none d-lg-block">
-                <a href="#" class="book-btn ms-lg-3">
+                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
                     Book Appointment
                     <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                 </a>
@@ -117,8 +129,13 @@
     <section class="hero">
         <div class="container">
             <div>
-                <h1>About us</h1>
-                <p class="hero-breadcrumb">Home / About us</p>
+                <h1 data-aos="fade-up" data-aos-delay="200">About Us</h1>
+                <nav data-aos="fade-up" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-white">About</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -128,14 +145,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                <h2 class="section-title text-start">Introducing <br><span class="highlight">Vedant Pain Clinic</span> !</h2>
+                    <h2 class="section-title text-start" data-aos="fade-right">Introducing <br><span class="highlight">Vedant Pain
+                            Clinic</span> !</h2>
                 </div>
                 <div class="col-md-7">
-                <p class="welcome-text text-start">At Vedant Pain Management Clinic, we are dedicated to providing comprehensive,
-                    patient-centered care for individuals dealing with chronic pain. Our team of specialists utilizes
-                    the latest techniques and therapies to help you regain control of your life and find relief from
-                    pain.</p>
-                    </div>
+                    <p class="welcome-text text-start" data-aos="fade-left">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive,
+                        patient-centered care for individuals dealing with chronic pain. Our team of specialists
+                        utilizes
+                        the latest techniques and therapies to help you regain control of your life and find relief from
+                        pain.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -184,37 +204,38 @@
                 <!-- Left Content -->
                 <div class="col-md-6">
                     <div class="choose-content">
-                        <span class="section-badge">
+                        <span class="section-badge" data-aos="fade-right" data-aos-delay="100">
                             Meet Dr. Mohit Gupta
                         </span>
-                        <h2 class="section-title">
-                            Leading Expert <br><span class="highlight">In Interventional Pain Management</span>
+                        <h2 class="section-title" data-aos="fade-right" data-aos-delay="200">
+                            Leading Expert In <br><span class="highlight"> Interventional Pain Management</span>
                         </h2>
 
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <div class="choose-card">
+                                <div class="choose-card" data-aos="fade-up" data-aos-delay="100">
                                     <i class="fas fa-clock"></i>
                                     <h5>Chronic Pain Management</h5>
-                                    <p>Tailored treatment plans for long-term pain relief, focusing on improving your quality of life.</p>
+                                    <p>Tailored treatment plans for long-term pain relief, focusing on improving your
+                                        quality of life.</p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="choose-card">
+                                <div class="choose-card" data-aos="fade-up" data-aos-delay="200">
                                     <i class="fas fa-heartbeat"></i>
                                     <h5>Minimally Invasive Procedures</h5>
                                     <p>Advanced techniques to treat pain with minimal recovery time.</p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="choose-card">
+                                <div class="choose-card" data-aos="fade-up" data-aos-delay="300">
                                     <i class="fas fa-check-circle"></i>
                                     <h5>Physical Therapy</h5>
                                     <p>Customized exercises and therapies to restore function and mobility.</p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="choose-card">
+                                <div class="choose-card" data-aos="fade-up" data-aos-delay="400">
                                     <i class="fas fa-brain"></i>
                                     <h5>Medication Management</h5>
                                     <p>Safe and effective use of medications as part of a holistic treatment plan.</p>
@@ -226,7 +247,7 @@
 
                 <!-- Right Image -->
                 <div class="col-md-6">
-                    <div class="choose-image">
+                    <div class="choose-image" data-aos="fade-left" data-aos-delay="100">
                         <img src="images/pngimg.com - doctor_PNG16034.png" alt="Doctor" class="img-fluid">
                         <div class="badge-25">
                             25+<br><span>Years</span>
@@ -237,15 +258,12 @@
         </div>
     </section>
 
-
-    
-
     <div class="testimonials-section">
         <div class="container">
             <div class="text-center">
-                <span class="section-badge">Our Testimonials</span>
-                <h2 class="test-title">What Our Patients Say About Us</h2>
-                <p class="section-description">
+                <span class="section-badge" data-aos="fade-up" data-aos-delay="100">Our Testimonials</span>
+                <h2 class="test-title" data-aos="fade-up" data-aos-delay="200">What Our Patients Say About Us</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="400">
                     We are a team of experienced and dedicated professionals who are passionate about providing quality
                     Medicare services. We understand that each individual is unique.
                 </p>
@@ -256,8 +274,7 @@
                     <div class="testimonials-track" id="testimonialsTrack">
 
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Devon Lane"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -266,17 +283,19 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <p class="testimonial-text">
-                                I was very impressed with the Midi care website that i found. It was easy to navigate
-                                and had all of the information that i needed..
+                                Went for wrist pain due to working on laptop for long hours. The doctor gave me some
+                                specific posture advice along with therapy. Found it helpful. The Clinic is clean and
+                                well-managed.
                             </p>
-                            <h3 class="testimonial-name">Devon Lane</h3>
-                            <p class="testimonial-address">2118 Thoridge Cir. Syracuse</p>
+                            <h3 class="testimonial-name">Suhaan Sharma</h3>
+                            <a style="text-decoration: none;" href="https://maps.app.goo.gl/54BEVXDiEaYeuMLH7">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
                         </div>
 
 
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dianne Russel"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -285,17 +304,18 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <p class="testimonial-text">
-                                I was very impressed with the Midi care website that i found. It was easy to navigate
-                                and had all of the information that i needed..
+                                After just two weeks of physical therapy here, I'm able to sit through my deskjob
+                                without discomfort. Totally changed how I feel during the day.
                             </p>
-                            <h3 class="testimonial-name">Dianne Russel</h3>
-                            <p class="testimonial-address">2118 Thoridge Cir. Syracuse</p>
+                            <h3 class="testimonial-name">Sumant Padhy</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
                         </div>
 
 
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Ronald Richards"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="Ronald Richards" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -304,16 +324,17 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <p class="testimonial-text">
-                                I was very impressed with the Midi care website that i found. It was easy to navigate
-                                and had all of the information that i needed..
+                                The clinic is well-managed and the team is polite. I appreciated how everything was
+                                explained in simple language, which helped ease my anxiety
                             </p>
-                            <h3 class="testimonial-name">Ronald Richards</h3>
-                            <p class="testimonial-address">2118 Thoridge Cir. Syracuse</p>
+                            <h3 class="testimonial-name">Rabinarayana Mohapatra</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jane Cooper"
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -322,16 +343,17 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <p class="testimonial-text">
-                                Outstanding service and care! The team was professional, caring, and made me feel
-                                comfortable throughout my entire visit.
+                                Vedant is hands down the best option in Faridabad for anyone looking to avoid surgery
+                                for chronic pain. Thier approach is very thoughtful and effective.
                             </p>
-                            <h3 class="testimonial-name">Jane Cooper</h3>
-                            <p class="testimonial-address">3891 Ranchview Dr. Richardson</p>
+                            <h3 class="testimonial-name">Ishita Singhvi</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -340,11 +362,110 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <p class="testimonial-text">
-                                Highly recommend! The staff is knowledgeable and friendly. They took the time to answer
-                                all my questions and concerns.
+                                I recently visited Vedant Pain Management Clinic and had an excellent experience. From
+                                the moment I entered, the staff....
                             </p>
-                            <h3 class="testimonial-name">Robert Fox</h3>
-                            <p class="testimonial-address">4517 Washington Ave. Manchester</p>
+                            <h3 class="testimonial-name">Radhika bansal</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Vedant Pain Management Clinic in Faridabad is fantastic! Dr. Gupta and his team offer
+                                personalized care and advanced treatments. They focus on the root cause of pain with a
+                                holistic approach, making recovery effective and supportive. Highly recommend!
+                            </p>
+                            <h3 class="testimonial-name">Amit Chandeliya</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                I'm so grateful for Dr. Mohit Gupta. He accurately diagnosed my condition and
+                                recommended a treatment plan that worked wonders. I'm feeling much better now, thanks to
+                                Dr Mohit.
+                            </p>
+                            <h3 class="testimonial-name">Kapil Kumar</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                The treatment in Vedant Pain Management Clinic was fantastic to facilitate and the
+                                doctors and staff were so good with their skills. Thanks Vedant Pain Management Clinic.
+                            </p>
+                            <h3 class="testimonial-name">Sunil Chamola</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Very good experience at this center. Dr. Mohit is one of the best pain physicians in
+                                Delhi NCR. Very meticulous and professional.
+                            </p>
+                            <h3 class="testimonial-name">Priyanshi Verma</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                I was looking for a trusted pain clinic in Faridabad for my back pain, and Vedant turned
+                                out to be the perfect choice. Great experience and a lot of improvement without surgery.
+                            </p>
+                            <h3 class="testimonial-name">Muskan Hetawal</h3>
+                            <a style="text-decoration: none;" href="">
+                                <p class="testimonial-address">View Full Review</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -357,20 +478,21 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
                     <div class="contact-content">
-                        <h2>We're Here for You!</h2>
-                        <p class="contact-subtitle">Reach out for any queries or appointments</p>
+                        <h2 data-aos="fade-right" data-aos-delay="100">We're Here for You!</h2>
+                        <p class="contact-subtitle" data-aos="fade-right" data-aos-delay="200">Reach out for any queries
+                            or appointments</p>
 
-                        <div class="contact-item">
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
                             <i class="fas fa-phone-alt"></i>
                             <span>+91 8171244512</span>
                         </div>
 
-                        <div class="contact-item">
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
                             <i class="fas fa-envelope"></i>
                             <span>care@vedantpainclinic.com</span>
                         </div>
 
-                        <div class="contact-item">
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="500">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>House No. 21, Sector 9, Opposite Sector 9, Huda Market,<br> Faridabad, Haryana
                                 121006</span>
@@ -379,7 +501,7 @@
 
                         <!-- <span>Connect with Us</span>
                             <i class="fas fa-arrow-right"></i> -->
-                        <a href="#" class="book-btn mt-2">
+                        <a href="contact.html" class="book-btn mt-2" data-aos="fade-up" data-aos-delay="100">
                             Connect with Us
                             <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
@@ -387,7 +509,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <div class="map-container">
+                    <div class="map-container" data-aos="fade-up" data-aos-delay="100">
                         <div class="custom-map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14041.544950111791!2d77.33104!3d28.3774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddc837bed5df%3A0xa1c9670cdb264f7a!2sVedant%20Pain%20Management%20Clinic!5e0!3m2!1sen!2sin!4v1762953675868!5m2!1sen!2sin"
@@ -405,32 +527,40 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Get Expert Medical Care at<br>Your Fingertips!</h2>
-                <p>Access top doctors and healthcare services anytime, anywhere. Book appointments,<br>consult online,
+                <h2 data-aos="fade-up" data-aos-delay="100">Get Expert Medical Care at<br>Your Fingertips!</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Access top doctors and healthcare services anytime, anywhere.
+                    Book appointments,<br>consult online,
                     and prioritize your well-being today!</p>
 
                 <div class="cta-buttons">
-                    <button class="btn-primary-custom">
-                        <i class="far fa-calendar-check"></i>
-                        <span>Book an Appointment</span>
-                    </button>
-                    <button class="btn-secondary-custom">
-                        <span>Contact Us</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <a href="https://vedantpainclinic.com/appointment/appointment.php">
+                        <button class="btn-primary-custom" data-aos="fade-up" data-aos-delay="100">
+                            <i class="far fa-calendar-check"></i>
+                            <span>Book an Appointment</span>
+                        </button>
+                    </a>
+                    <a href="contact.html">
+                        <button class="btn-secondary-custom" data-aos="fade-up" data-aos-delay="100">
+                            <span>Contact Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer-section pt-5 pb-3">
         <div class="container-xl">
             <div class="row g-4 mb-4">
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="footer-title">Vedant Clinic</h5>
-                    <p class="footer-text">Delivering excellence in pain management with compassion and expertise since
-                        2009.</p>
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/imgi_1_logo.png" alt="" class="mb-3">
+                        </a>
+                    </div>
+                    <p class="footer-text">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive, patient-centered care for individuals dealing with chronic pain.</p>
 
                     <div class="social-links">
                         <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
@@ -461,10 +591,10 @@
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="footer-title">Contact</h5>
+                    <h5 class="footer-title">Quick Contacts</h5>
                     <p class="footer-text">
                         <strong>Phone:</strong> +91 8171244512<br>
-                        <strong>Email:</strong> info@vedantpainclinic.com<br>
+                        <strong>Email:</strong> care@vedantpainclinic.com<br>
                         <strong>Hours:</strong> 9 AM - 7 PM
                     </p>
                 </div>
@@ -482,7 +612,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 </html>

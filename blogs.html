@@ -17,14 +17,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
-    <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
                 <a href="index.html">
@@ -72,18 +73,29 @@
                         <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
                             <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
                                     Gasserian Ganglion RFA</a></li>
-                            <li><a class="dropdown-item" href="">Cervical Epidural</a></li>
-                            <li><a class="dropdown-item" href="">Facet</a></li>
-                            <li><a class="dropdown-item" href="">Transforaminal Epidural Adhesiolysis</a></li>
-                            <li><a class="dropdown-item" href="">Sympathectomy Block / Neurolysis / RFA</a></li>
-                            <li><a class="dropdown-item" href="">Sacroiliac joint Injection / Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
-                            <li><a class="dropdown-item" href="">Knee Genicular Nerves Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="">Shoulder Capsule Release Adhesiolysis RFA</a></li>
-                            <li><a class="dropdown-item" href="">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
-                            <li><a class="dropdown-item" href="">Musculoskeletal Trigger Point Release</a></li>
-                            <li><a class="dropdown-item" href="">Provocative Discography</a></li>
-                            <li><a class="dropdown-item" href="">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                            <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="facet.html">Facet</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal
+                                    Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy
+                                    Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac
+                                    joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar
+                                    Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular
+                                    Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder
+                                    Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled
+                                    Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item"
+                                    href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point
+                                    Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a>
+                            </li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal
+                                    Cord Stimulator and Intrathecal Pump</a></li>
                         </ul>
                     </li>
 
@@ -94,7 +106,7 @@
 
                 <ul class="navbar-nav d-lg-none">
                     <li class="nav-item">
-                        <a href="#" class="book-btn ms-lg-3">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
                             Book Appointment
                             <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
@@ -104,7 +116,7 @@
             </div>
 
             <div class="d-none d-lg-block">
-                <a href="#" class="book-btn ms-lg-3">
+                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
                     Book Appointment
                     <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                 </a>
@@ -117,8 +129,13 @@
     <section class="hero">
         <div class="container">
             <div>
-                <h1>Blogs</h1>
-                <p class="hero-breadcrumb">Home / Blogs</p>
+                <h1 data-aos="fade-up" data-aos-delay="200">Our Blogs</h1>
+                <nav data-aos="fade-up" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-white">Blogs</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -140,17 +157,20 @@
 
                 <!-- Card 1 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/blogs/Gemini_Generated_Image_9txwj19txwj19txw.png" alt="" class="blog-card-image">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/blogs/Gemini_Generated_Image_9txwj19txwj19txw.png" alt=""
+                            class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Exercise & Fitness</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">Cancer Pain Treatment in Faridabad</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">July 18,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="cancer-pain-treatment-in-faridabad.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -158,17 +178,20 @@
 
                 <!-- Card 2 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/blogs/imgi_3_68dd1e6e0ed73_hippaintreatmentinfaridabad.jpg" alt="" class="blog-card-image">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/blogs/img-8.png" alt=""
+                            class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Mental Health</div>
+                                <div class="badge-custom">Health</div>
                                 <p class="blog-text">Fastest Way To Relieve Hip Pain</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Aug 26,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="fastest-way-to-relieve-hip-pain.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -176,17 +199,19 @@
 
                 <!-- Card 3 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/blogs/img-6.png" alt="" class="blog-card-image">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/blogs/img-7.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Mental Health</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">Lower Back Pain Treatment in Faridabad</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Aug 26,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="lower-back-pain-treatment-in-faridabad.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -194,17 +219,19 @@
 
                 <!-- Card 4 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
                         <img src="images/blogs/img-6.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Healthy Lifestyle</div>
+                                <div class="badge-custom">Medicine</div>
                                 <p class="blog-text">Best Medicine for Shoulder Pain?</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Sep 10,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="best-medicine-for-shoulder-pain.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -212,17 +239,19 @@
 
                 <!-- Card 5 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="500">
                         <img src="images/blogs/img-5.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Nutrition</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">Which Treatment Is Best for Knee Pain?</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Oct 03,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="best-treatment-for-knee-pain.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -230,125 +259,143 @@
 
                 <!-- Card 6 -->
                 <div class="col-md-4">
-                    <div class="blog-card">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="600">
                         <img src="images/blogs/img-2.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Skin Care</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">Best Neck Pain Treatment in Faridabad</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Nov 14,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="best-neck-pain-treatment.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/blogs/imgi_8_687a05bfe1809_backpaintreatmentinfaridabad.png" alt="" class="blog-card-image">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="700">
+                        <img src="images/blogs/img-9.png" alt=""
+                            class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Skin Care</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">Back Pain Treatment in Faridabad</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Nov 14,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="back-pain-treatment.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="blog-card">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="800">
                         <img src="images/blogs/img-4.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Skin Care</div>
+                                <div class="badge-custom">Pain Management</div>
                                 <p class="blog-text">Top Pain Management Clinic in Faridabad</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Nov 14,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="top-pain-management-clinic.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="blog-card">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="900">
                         <img src="images/blogs/img-3.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Skin Care</div>
+                                <div class="badge-custom">Treatment</div>
                                 <p class="blog-text">How Vedant Pain Management Clinic Helps You Get Back on Track</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Nov 14,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="how-vedant-pain-management-clinic-helps.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="col-md-4">
-                    <div class="blog-card">
-                        <img src="images/blogs/imgi_11_neck-pain.jpg" alt="" class="blog-card-image">
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="1000">
+                        <img src="images/blogs/img-1.png" alt="" class="blog-card-image">
                         <div class="blog-card-overlay"></div>
                         <div class="blog-card-content">
                             <div>
-                                <div class="badge-custom">Skin Care</div>
-                                <p class="blog-text">Dermatologist-approved skincare secrets.</p>
+                                <div class="badge-custom">Treatment</div>
+                                <p class="blog-text">Effective Neck Pain Treatment</p>
                             </div>
                             <div class="blog-footer">
                                 <span class="blog-date">Nov 14,2024</span>
-                                <div class="blog-arrow-icon">→</div>
+                                <a style="text-decoration: none;" href="effective-neck-pain-treatment.html">
+                                    <div class="blog-arrow-icon">→</div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div><!-- row end -->
         </div>
     </section>
 
-    
-    <!-- Section 2: CTA Section -->
+
+   <!-- Section 2: CTA Section -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Get Expert Medical Care at<br>Your Fingertips!</h2>
-                <p>Access top doctors and healthcare services anytime, anywhere. Book appointments,<br>consult online,
+                <h2 data-aos="fade-up" data-aos-delay="100">Get Expert Medical Care at<br>Your Fingertips!</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Access top doctors and healthcare services anytime, anywhere. Book appointments,<br>consult online,
                     and prioritize your well-being today!</p>
 
                 <div class="cta-buttons">
-                    <button class="btn-primary-custom">
-                        <i class="far fa-calendar-check"></i>
-                        <span>Book an Appointment</span>
-                    </button>
-                    <button class="btn-secondary-custom">
-                        <span>Contact Us</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <a href="https://vedantpainclinic.com/appointment/appointment.php">
+                        <button class="btn-primary-custom" data-aos="fade-up" data-aos-delay="100">
+                            <i class="far fa-calendar-check"></i>
+                            <span>Book an Appointment</span>
+                        </button>
+                    </a>
+                    <a href="contact.html">
+                        <button class="btn-secondary-custom" data-aos="fade-up" data-aos-delay="100">
+                            <span>Contact Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer-section pt-5 pb-3">
         <div class="container-xl">
             <div class="row g-4 mb-4">
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="footer-title">Vedant Clinic</h5>
-                    <p class="footer-text">Delivering excellence in pain management with compassion and expertise since
-                        2009.</p>
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/imgi_1_logo.png" alt="" class="mb-3">
+                        </a>
+                    </div>
+                    <p class="footer-text">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive, patient-centered care for individuals dealing with chronic pain.</p>
 
                     <div class="social-links">
                         <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
@@ -379,10 +426,10 @@
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="footer-title">Contact</h5>
+                    <h5 class="footer-title">Quick Contacts</h5>
                     <p class="footer-text">
                         <strong>Phone:</strong> +91 8171244512<br>
-                        <strong>Email:</strong> info@vedantpainclinic.com<br>
+                        <strong>Email:</strong> care@vedantpainclinic.com<br>
                         <strong>Hours:</strong> 9 AM - 7 PM
                     </p>
                 </div>
@@ -397,10 +444,19 @@
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="js/script.js"></script>
 
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
 </body>
+
 </html>

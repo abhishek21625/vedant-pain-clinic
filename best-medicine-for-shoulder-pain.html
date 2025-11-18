@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the Best Medicine for Shoulder Pain ? | Vedant Pain Clinic | Pain Management Clinic in Faridabad
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: inline-flex;
+        }
+
+        .breadcrumb-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .blog-details-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.8s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .blog-head-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            position: relative;
+            /* padding-left: 1.5rem; */
+        }
+
+        /* .blog-head-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 10px;
+} */
+
+        .information-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .information-box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .information-box h5 {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* .sidebar {
+  position: sticky;
+  top: 100px;
+} */
+
+        .sidebar-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card i {
+            /* color: var(--primary); */
+        }
+
+        .sidebar-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            /* color: var(--dark); */
+        }
+
+        .toc-item {
+            padding: 0.7rem 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover,
+        .toc-item.active {
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+            border-left-color: var(--accent-cyan);
+            transform: translateX(5px);
+        }
+
+        .cta-container {
+            background: var(--accent-cyan);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: ;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .cta-btn {
+            background: white;
+            color: var(--accent-cyan);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient);
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            color: var(--secondary);
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        ul li {
+            margin: 0.8rem 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            margin: 2rem 0;
+        }
+    </style>
+
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/imgi_1_logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conditions
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
+                            <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
+                            <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
+                            <li><a class="dropdown-item" href="knee-pain.html">Knee pain</a></li>
+                            <li><a class="dropdown-item" href="buttock-pain.html">Buttock Pain</a></li>
+                            <li><a class="dropdown-item" href="shoulder-pain.html">Shoulder Pain</a></li>
+                            <li><a class="dropdown-item" href="pain-due-to-vascular-diseases.html">Pain Due To Vascular
+                                    Diseases</a></li>
+                            <li><a class="dropdown-item" href="hip-pain.html">Hip Pain</a></li>
+                            <li><a class="dropdown-item" href="cancer-pain-and-palliative-care.html">Cancer Pain And
+                                    Palliative Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Treatments
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
+                                    Gasserian Ganglion RFA</a></li>
+                            <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="facet.html">Facet</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item" href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a></li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                            Book Appointment
+                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-block">
+                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                    Book Appointment
+                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1 data-aos="fade-up" data-aos-delay="200">Best Medicine for Shoulder Pain?</h1>
+                <nav data-aos="fade-up" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active text-white">Best Medicine for Shoulder Pain?</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" style="overflow: visible;">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar sticky-top" style="top:10px;" data-aos="fade-right" data-aos-delay="200">
+                        <!-- Table of Contents -->
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-title" data-aos="fade-right" data-aos-delay="300">Latest Blogs</h3>
+                            <!-- <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i> Cancer Pain Treatment
+                            </div> -->
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="400">
+                                <i class="fas fa-chevron-right me-2"></i> Cancer Pain Treatment
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="500">
+                                <i class="fas fa-chevron-right me-2"></i> Fastest Way to Relieve Hip Pain
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="600">
+                                <i class="fas fa-chevron-right me-2"></i> Lower Back Pain Treatment
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="700">
+                                <i class="fas fa-chevron-right me-2"></i> Best Treatment for Knee Pain
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="800">
+                                <i class="fas fa-chevron-right me-2"></i> Best Neck Pain Treatment
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="900">
+                                <i class="fas fa-chevron-right me-2"></i> Back Pain Treatment
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1000">
+                                <i class="fas fa-chevron-right me-2"></i> Top Pain Management Clinic
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1100">
+                                <i class="fas fa-chevron-right me-2"></i> How Vedant Pain Management Clinic Helps You
+                                Get Back on Track
+                            </div>
+                            <!-- <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i>
+                            </div>
+                            <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i> 
+                            </div>
+                            <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i> 
+                            </div> -->
+                            <!-- <div class="toc-item" onclick="scrollToSection('conclusion')">
+                                <i class="fas fa-chevron-right me-2"></i> Conclusion
+                            </div>
+                            <div class="toc-item" onclick="scrollToSection('faqs')">
+                                <i class="fas fa-chevron-right me-2"></i> FAQs
+                            </div> -->
+                        </div>
+
+                        <!-- Quick Info -->
+                        <div class="sidebar-card" data-aos="fade-right" data-aos-delay="1500">
+                            <h3 class="sidebar-title">Quick Information</h3>
+                            <div class="mb-3">
+                                <i class="fas fa-clock me-2"></i>
+                                <strong>Reading Time:</strong> 8 min
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-calendar me-2"></i>
+                                <strong>Last Updated:</strong> October 2025
+                            </div>
+                            <div>
+                                <i class="fas fa-user-md me-2"></i>
+                                <strong>Expert:</strong> Dr. Mohit Gupta
+                            </div>
+                        </div>
+
+                        <!-- Contact Card -->
+                        <!-- <div class="sidebar-card">
+                            <h3 class="sidebar-title" style="color: white;">Contact Us</h3>
+                            <p>Have questions about ovarian cyst surgery?</p>
+                            <button class="cta-btn" style="width: 100%;">Get in Touch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8">
+                    <div class="blog-details-card" data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="blog-head-title" id="high">What is the Best Medicine for Shoulder Pain?</h2>
+
+                        <p class="">Shoulder pain is one of the most common problems people face in daily life. Whether
+                            it comes from lifting heavy objects, poor posture, sports injuries, or age-related
+                            conditions like arthritis, the pain can be frustrating and disabling. It may stop you from
+                            sleeping well, working comfortably, or even doing simple tasks like combing your hair.
+                            <br><br>
+
+                            The big question most patients ask is: <strong>What is the best medicine for shoulder pain
+                                ?</strong> <br><br>
+
+                            At Vedant Pain Management Clinic our approach is clear—shoulder pain treatment in faridabad
+                            should never be about just masking the pain with tablets. Instead, we focus on finding the
+                            root cause, using the right medicines when required, and combining them with advanced
+                            non-surgical treatments for lasting relief.
+                        </p>
+
+                        <h2 class="blog-head-title" id="meet">Causes of Shoulder Pain</h2>
+                        <p>Before talking about the best medicines, it’s important to understand why the shoulder hurts
+                            in the first place. Common causes include:</p>
+                        <ul>
+                            <li><strong>Muscle Strain or Overuse:</strong> Lifting weights or repetitive movements.</li>
+                            <li><strong>Frozen Shoulder (Adhesive Capsulitis):</strong> Stiffness and limited mobility.
+                            </li>
+                            <li><strong>Rotator Cuff Injuries:</strong> Tear or inflammation of shoulder tendons.</li>
+                            <li><strong>Arthritis:</strong> Wear and tear in the joint over time.</li>
+                            <li><strong>Pinched Nerve:</strong> Radiating pain from cervical spine issues.</li>
+                            <li><strong>Poor Posture:</strong> Long hours at a desk or mobile use.</li>
+                        </ul>
+
+                        <p>At Vedant Pain Management Clinic, every patient undergoes a thorough evaluation to identify
+                            the actual cause before starting any treatment.</p>
+
+
+                        <!-- When Surgery is Needed -->
+                        <h2 class="blog-head-title" id="process">Best Medicines for Shoulder Pain</h2>
+
+                        <p>When it comes to shoulder pain, there is no “one-size-fits-all” medicine. The treatment
+                            depends on the cause, severity, and overall health of the patient. Still, here are the most
+                            commonly prescribed categories of medicines:</p>
+
+                        <ol>
+                            <li><strong>Pain Relievers (Analgesics) :</strong> Over-the-counter medicines like
+                                paracetamol can help with mild shoulder pain. They are usually safe for short-term use
+                                but should be taken under a doctor’s guidance if pain persists.</li>
+                            <li><strong>Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) :</strong> Medicines like
+                                ibuprofen, diclofenac, or naproxen are commonly prescribed to reduce both pain and
+                                inflammation. They work well in conditions like tendonitis, arthritis, or frozen
+                                shoulder. However, long-term use can cause stomach or kidney issues, so medical
+                                supervision is a must.</li>
+                            <li><strong>Muscle Relaxants :</strong> If shoulder pain is due to muscle spasms or
+                                stiffness, muscle relaxants may be prescribed. They help the shoulder muscles relax and
+                                reduce pain intensity.</li>
+                            <li><strong>Topical Ointments & Patches :</strong> For localized pain, pain relief gels,
+                                sprays, or medicated patches can be applied directly to the shoulder. These give
+                                temporary relief and are safe for short-term use.</li>
+                            <li><strong>Steroid Injections :</strong> In severe cases where oral medicines are not
+                                enough, corticosteroid injections may be given directly into the shoulder joint. These
+                                reduce inflammation quickly and provide relief for weeks to months.</li>
+                        </ol>
+
+                        <h2 class="blog-head-title" id="process">Why Self-Medication is Risky</h2>
+                        <p>Many patients try to manage shoulder pain on their own with random painkillers or home
+                            remedies. While some relief is possible, self-medication can be harmful: <br><br>
+
+                            Long-term painkiller use may damage kidneys, stomach, or liver. <br><br>
+
+                            Wrong medicines may hide symptoms without addressing the root cause. <br><br>
+
+                            Delay in proper diagnosis can worsen conditions like rotator cuff tears or frozen shoulder.
+                            <br><br>
+
+                            That’s why at Vedant Pain Management Clinic, we guide patients on the right medicines while
+                            also offering advanced pain treatments to ensure safe and long-term recovery.
+                        </p>
+
+
+
+                        <h2 class="blog-head-title" id="process">Shoulder Pain Treatment Beyond Medicines</h2>
+                        <p>Medicines are just one part of shoulder pain management. At Vedant Pain Management Clinic,
+                            Faridabad, we focus on non-surgical and minimally invasive options that provide
+                            longer-lasting relief compared to medicines alone.</p>
+
+                        <ol>
+                            <li><strong>Nerve Blocks :</strong> These are image-guided injections that block the pain
+                                signals coming from irritated nerves in the shoulder region. Patients often experience
+                                immediate relief.</li>
+                            <li><strong>Platelet-Rich Plasma (PRP) Therapy :</strong> Using your body’s own healing
+                                platelets, PRP therapy helps repair damaged tissues and tendons in the shoulder joint.
+                                It is especially effective for sports injuries and rotator cuff problems.</li>
+                            <li><strong>Radiofrequency Ablation (RFA) :</strong> This advanced technique targets the
+                                nerves responsible for chronic shoulder pain and deactivates them using heat waves,
+                                providing relief for months.</li>
+                            <li><strong>Physiotherapy & Exercise :</strong> Strengthening the shoulder muscles,
+                                improving posture, and restoring mobility are vital parts of treatment. Medicines work
+                                best when combined with rehabilitation.</li>
+                        </ol>
+
+                        <h2 class="blog-head-title" id="process">Home Remedies for Shoulder Pain</h2>
+                        <p>While medicines and medical treatments are important, shoulder pain home remedies can provide
+                            added relief:</p>
+                        <ul>
+                            <li><strong>Hot & Cold Packs:</strong> Ice reduces swelling, heat relaxes stiffness.</li>
+                            <li><strong>Gentle Stretching:</strong> Improves flexibility and prevents frozen shoulder.
+                            </li>
+                            <li><strong>Posture Correction:</strong> Sit straight, avoid slouching while working.</li>
+                            <li><strong>Rest:</strong>Avoid lifting heavy weights until pain subsides.</li>
+                            <li><strong>Massage with Warm Oil:</strong> Improves blood flow and reduces stiffness.</li>
+                        </ul>
+                        <p>These remedies may not cure severe shoulder problems but can complement professional care.
+                        </p>
+
+
+                        <h2 class="blog-head-title" id="process">Why Choose Vedant Pain Management Clinic, Faridabad ?
+                        </h2>
+                        <ul>
+                            <li>Experienced pain medicine specialist <strong>Dr. Mohit Gupta</strong></li>
+                            <li>Expertise in <strong>non-surgical shoulder pain treatments</strong></li>
+                            <li>Advanced technologies like PRP therapy & RFA <strong>PRP therapy & RFA</strong></li>
+                            <li>Focus on <strong>patient comfort & long-term recovery</strong></li>
+                            <li>Convenient location in<strong>Faridabad</strong></li>
+                        </ul>
+
+
+                        <h2 class="blog-head-title" id="consult">Final Thoughts</h2>
+                        <p>So, what is the best medicine for shoulder pain? The answer depends on your diagnosis.
+                            Painkillers and anti-inflammatories may give temporary relief, but they are not always the
+                            final solution. For lasting results, the best approach combines medicines with advanced
+                            treatments and lifestyle changes. <br><br>
+
+                            At Vedant Pain Management Clinic, Faridabad, we believe in treating the cause, not just the
+                            symptoms. If shoulder pain is limiting your life, it’s time to consult a specialist and
+                            discover the right treatment plan for you.</p>
+
+
+
+                        <!-- Tags -->
+                        <div class="mt-4">
+                            <span class="tag">Best Pain Management Clinic In Faridabad</span>
+                            <span class="tag">Top Pain Treatments In Faridabad</span>
+                            <!-- <span class="tag"></span>
+                            <span class="tag">Laparoscopy</span> -->
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="cta-container" data-aos="fade-up" data-aos-delay="100">
+                        <h2>Need Expert Consultation ?</h2>
+                        <p class="mb-4">Schedule an appointment with Dr. Mohit Gupta for personalized care and
+                            treatment
+                        </p>
+                        <a href="contact.html">
+                            <button class="cta-btn">Book Appointment</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <footer class="footer-section pt-5 pb-3">
+        <div class="container-xl">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/imgi_1_logo.png" alt="" class="mb-3">
+                        </a>
+                    </div>
+                    <p class="footer-text">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive, patient-centered care for individuals dealing with chronic pain.</p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
+                            class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/vedant-pain-management-clinic/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/vedantpainclinic/#" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Conditions</h5>
+                    <ul class="footer-links">
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                        <li><a href="neck-pain.html">Neck Pain</a></li>
+                        <li><a href="buttock-pain.html">Buttock Pain</a></li>
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Contacts</h5>
+                    <p class="footer-text">
+                        <strong>Phone:</strong> +91 8171244512<br>
+                        <strong>Email:</strong> care@vedantpainclinic.com<br>
+                        <strong>Hours:</strong> 9 AM - 7 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <p class="footer-copyright text-center">&copy; 2025 Vedant Pain Management Clinic. All rights
+                        reserved. Designed & Developed By Brandingwaale Webtech</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

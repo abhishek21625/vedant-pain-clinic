@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Pain Management Clinic in Faridabad: Your Path to Relief | Vedant Pain Clinic | Pain Management Clinic in
+        Faridabad
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: inline-flex;
+        }
+
+        .breadcrumb-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .blog-details-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.8s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .blog-head-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            position: relative;
+            /* padding-left: 1.5rem; */
+        }
+
+        /* .blog-head-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 10px;
+} */
+
+        .information-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .information-box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .information-box h5 {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* .sidebar {
+  position: sticky;
+  top: 100px;
+} */
+
+        .sidebar-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card i {
+            /* color: var(--primary); */
+        }
+
+        .sidebar-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            /* color: var(--dark); */
+        }
+
+        .toc-item {
+            padding: 0.7rem 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover,
+        .toc-item.active {
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+            border-left-color: var(--accent-cyan);
+            transform: translateX(5px);
+        }
+
+        .cta-container {
+            background: var(--accent-cyan);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: ;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .cta-btn {
+            background: white;
+            color: var(--accent-cyan);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient);
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            color: var(--secondary);
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        ul li {
+            margin: 0.8rem 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            margin: 2rem 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/imgi_1_logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conditions
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
+                            <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
+                            <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
+                            <li><a class="dropdown-item" href="knee-pain.html">Knee pain</a></li>
+                            <li><a class="dropdown-item" href="buttock-pain.html">Buttock Pain</a></li>
+                            <li><a class="dropdown-item" href="shoulder-pain.html">Shoulder Pain</a></li>
+                            <li><a class="dropdown-item" href="pain-due-to-vascular-diseases.html">Pain Due To Vascular
+                                    Diseases</a></li>
+                            <li><a class="dropdown-item" href="hip-pain.html">Hip Pain</a></li>
+                            <li><a class="dropdown-item" href="cancer-pain-and-palliative-care.html">Cancer Pain And
+                                    Palliative Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Treatments
+                        </a>
+                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
+                                    Gasserian Ganglion RFA</a></li>
+                            <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
+                            <li><a class="dropdown-item" href="facet.html">Facet</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
+                            <li><a class="dropdown-item" href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a></li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                            Book Appointment
+                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-block">
+                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
+                    Book Appointment
+                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1 data-aos="fade-up" data-aos-delay="200">Top Pain Management Clinic in Faridabad</h1>
+                <nav data-aos="fade-up" data-aos-delay="500">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active text-white">Top Pain Management Clinic in Faridabad</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" style="overflow: visible;">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar sticky-top" style="top:10px;" data-aos="fade-right" data-aos-delay="200">
+                        <!-- Table of Contents -->
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-title" data-aos="fade-right" data-aos-delay="300">Latest Blogs</h3>
+                            <!-- <div class="toc-item">
+                                <i class="fas fa-chevron-right me-2"></i> Cancer Pain Treatment
+                            </div> -->
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="400">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;"
+                                    href="cancer-pain-and-palliative-care.html">
+                                    Cancer Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="500">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="fastest-way-to-relieve-hip-pain.html">
+                                    Fastest Way to Relieve Hip Pain
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="600">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="lower-back-pain-treatment-in-faridabad.html">
+                                    Lower Back Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="700">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="best-medicine-for-shoulder-pain.html">
+                                    Best Medicine for Shoulder Pain
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="800">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="">
+                                    Best Treatment For Knee Pain
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="900">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;" href="">
+                                    Best Neck Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1000">
+                                <i class="fas fa-chevron-right me-2"></i>
+                                <a style="text-decoration: none;color: black;" href="">
+                                    Back Pain Treatment
+                                </a>
+                            </div>
+                            <div class="toc-item" data-aos="fade-right" data-aos-delay="1100">
+                                <i class="fas fa-chevron-right me-2"></i> <a style="text-decoration: none;color: black;"
+                                    href="">
+                                    How Vedant Pain Management Clinic Helps You Get Back on Track
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Info -->
+                        <div class="sidebar-card" data-aos="fade-right" data-aos-delay="1500">
+                            <h3 class="sidebar-title">Quick Information</h3>
+                            <div class="mb-3">
+                                <i class="fas fa-clock me-2"></i>
+                                <strong>Reading Time:</strong> 8 min
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-calendar me-2"></i>
+                                <strong>Last Updated:</strong> October 2025
+                            </div>
+                            <div>
+                                <i class="fas fa-user-md me-2"></i>
+                                <strong>Expert:</strong> Dr. Mohit Gupta
+                            </div>
+                        </div>
+
+                        <!-- Contact Card -->
+                        <!-- <div class="sidebar-card">
+                            <h3 class="sidebar-title" style="color: white;">Contact Us</h3>
+                            <p>Have questions about ovarian cyst surgery?</p>
+                            <button class="cta-btn" style="width: 100%;">Get in Touch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8">
+                    <div class="blog-details-card" data-aos="fade-left" data-aos-delay="200">
+
+                        <h2 class="blog-head-title" id="high">Top Pain Management Clinic in Faridabad: Your Path to
+                            Relief</h2>
+
+                        <p class="">
+                            Introduction
+                            Pain is a common yet complex medical condition affecting millions of people worldwide.
+                            Whether through an injury, surgery, or chronic disease, pain does have an extra edge of
+                            adversely affecting individuals' lives. Pan Management Clinics far and wide in Faridabad
+                            provide state-of-the-art treatments along with holistic approaches for relieving pain. If
+                            you are suffering from long-term pain, probably, a Pain Management Clinic in Faridabad like
+                            Vedant Pain Management Clinic could give you the right diagnosis, therapy, and guidance for
+                            long-term relief.
+                        </p>
+
+                        <h2 class="blog-head-title" id="choose">What is a Pain Management Clinic?</h2>
+                        <p>
+                            A Pain Management Clinic is defined as any hospital or facility that practices specialized
+                            medical treatment and provides diagnosis of certain types of pain. These clinics serve
+                            patients suffering from such chronic pain conditions as arthritis, back pain, migraine
+                            headache, neuropathy, and post-surgical pain, among others. The purpose of this clinic is
+                            not just to alleviate pain but also to address the basic problem for long-term, sustainable
+                            solutions.
+                        </p>
+
+                        <h2 class="blog-head-title" id="meet">Pain management clinics treat common conditions.</h2>
+                        <ul>
+                            <li>Neck pain - Can be caused by muscle strain, disc problems, or poor posture.</li>
+                            <li>Trigeminal Neuralgia - Is a chronic pain disorder affecting the trigeminal nerve,
+                                resulting in severe facial pain.</li>
+                            <li>Back pain - Pain can be both chronic and acute, resulting from a spinal condition,
+                                injury, or ruptured disc.</li>
+                            <li>Knee Pain- Pain caused by osteoarthritis, ligament injuries, or meniscus tears.</li>
+                            <li>Buttock Pain- Sciatica, muscle tightness, or pain due to pelvic conditions.</li>
+                            <li>Shoulder Pain- Pain caused by rotator cuff injury, frozen shoulder, or arthritis.</li>
+                            <li>Vascular Diseases- Pain associated with diseases such as peripheral artery disease and
+                                varicose veins.</li>
+                            <li>Hip Pain- Pain due to arthritis, bursitis, or fractures, affecting functions and
+                                mobility.</li>
+                            <li>Cancer Pain and Palliative Care - Pain relief aimed at maintaining comfort and enhancing
+                                the quality of life of cancer patients.</li>
+                        </ul>
+
+                        <h2 class="blog-head-title" id="process">Why Choose a Pain Management Clinic in Faridabad?</h2>
+                        <p>
+                            A Pain Management Clinic in Faridabad allows for advanced treatment options as well as
+                            customized care for each particular patient. The clinics focus on holistic and non-invasive
+                            but very effective methods of relieving pain that will, in turn, improve the patient's
+                            quality of life.
+                        </p>
+
+                        <h2 class="blog-head-title" id="process">Key Benefits of Visiting a Pain Management Clinic in
+                            Faridabad</h2>
+
+                        <p><strong>Specialization and Advanced Treatment Options</strong><br>
+                            Expert doctors, physiotherapists, and pain practitioners work collaboratively in a unique
+                            setting to give personalized care.<br>
+                            Advanced techniques include radiofrequency ablation, regenerative medicine, and
+                            interventional pain procedures.
+                        </p>
+
+                        <p><strong>Comprehensive and Multimodal Pain Management</strong><br>
+                            Clinics take a multidisciplinary approach, combining drugs, physiotherapy, and minimally
+                            invasive procedures.<br>
+                            Solutions focus on eliminating the root cause of the problem and not just alleviation of
+                            symptoms.
+                        </p>
+
+                        <p><strong>Minimally Invasive Procedures, So Recovery Happens Faster</strong><br>
+                            Advanced treatments, e.g., nerve blocks, PRP therapy, and spinal cord stimulation, minimize
+                            the need for surgery.<br>
+                            Minimally invasive facilitates faster recovery through less discomfort inflicted during the
+                            process.
+                        </p>
+
+                        <p><strong>Customized Rehabilitation and Therapy Plans</strong><br>
+                            Specialized rehabilitation programs using physical therapy, acupuncture, and chiropractic
+                            care.<br>
+                            Advice on lifestyle and ergonomic alterations for the prevention of recurrence of pain.
+                        </p>
+
+                        <p><strong>Accessibility and Affordable Care</strong><br>
+                            High-quality treatment at rates much lower when compared to metropolises.<br>
+                            Conveniently located in Faridabad, making expertise for pain care easily accessible.
+                        </p>
+
+                        <h2 class="blog-head-title" id="consult">Advanced Pain Management Techniques Used</h2>
+                        <p>
+                            Pain Management Clinics in Faridabad, including Vedant Pain Management Clinic, practice
+                            these new-age approaches and techniques to give the best to the patient. Following are some
+                            of the most useful pain management techniques:
+                        </p>
+
+                        <p><strong>Medication Therapy</strong><br>
+                            Pain relievers, anti-inflammatory drugs, muscle relaxants, and medications to treat
+                            neurogenic pain<br>
+                            Using non-opioid alternatives to avoid dependence.
+                        </p>
+
+                        <p><strong>Physical Therapy and Rehabilitation</strong><br>
+                            Customized exercise programs to strengthen muscles and improve flexibility.<br>
+                            Manual therapy, heat therapy, and electrotherapy for pain relief.
+                        </p>
+
+                        <p><strong>Interventional Pain Procedures</strong><br>
+                            Epidural Steroid Injection Relief-from pain arising in the spine or nerve.<br>
+                            Trigger Point Injections-to treat muscle pain and tension.<br>
+                            Radiofrequency Ablation (RFA)-minimally invasive technique that reduces nerve pain.
+                        </p>
+
+                        <p><strong>Alternative Therapy</strong><br>
+                            Acupuncture-stimulates nerve endings to relieve pain naturally.<br>
+                            Chiropractic Care-corrects spinal alignment for relief of back and neck pain.<br>
+                            Yoga and Meditation-Reduce stress and promote well-being.
+                        </p>
+
+                        <h2 class="blog-head-title" id="consult">Frequency Asked Questions?</h2>
+                        <ul>
+                            <li>What is the best pain management clinic in Faridabad?</li>
+                            <li>Is a referral needed to visit a pain management clinic?</li>
+                            <li>Are treatments for pain management safe?</li>
+                        </ul>
+
+                        <h2 class="blog-head-title" id="consult">Conclusion</h2>
+                        <p>
+                            Chronic pain can lead to a set of debilitating conditions, yet there exists professional
+                            help in the pain management clinics operating in Faridabad, one of which is the Vedant Pain
+                            Management Clinic. Specialized care, advanced treatments, and holistic therapies ensure
+                            these clinics restore comfort and regain mobility in patients. If you have been suffering
+                            for a long time, do not delay any longer; consult a pain management specialist today and set
+                            in motion towards becoming pain-free.
+                        </p>
+
+                        <div class="mt-4">
+                            <span class="tag">Best Female Surgeon In Faridabad</span>
+                            <span class="tag">Best Female Gynaecologist In Faridabad</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-container" data-aos="fade-up" data-aos-delay="100">
+                        <h2>Need Expert Consultation ?</h2>
+                        <p class="mb-4">Schedule an appointment with Dr. Mohit Gupta for personalized care and treatment
+                        </p>
+                        <a href="contact.html">
+                            <button class="cta-btn">Book Appointment</button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section pt-5 pb-3">
+        <div class="container-xl">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/imgi_1_logo.png" alt="" class="mb-3">
+                        </a>
+                    </div>
+                    <p class="footer-text">At Vedant Pain Management Clinic, we are dedicated to providing
+                        comprehensive, patient-centered care for individuals dealing with chronic pain.</p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Vedant-Pain-Management-Clinic/61565932113554/"
+                            class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/vedant-pain-management-clinic/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/vedantpainclinic/#" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Conditions</h5>
+                    <ul class="footer-links">
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                        <li><a href="neck-pain.html">Neck Pain</a></li>
+                        <li><a href="buttock-pain.html">Buttock Pain</a></li>
+                        <li><a href="back-pain.html">Back Pain</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Quick Contacts</h5>
+                    <p class="footer-text">
+                        <strong>Phone:</strong> +91 8171244512<br>
+                        <strong>Email:</strong> care@vedantpainclinic.com<br>
+                        <strong>Hours:</strong> 9 AM - 7 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <p class="footer-copyright text-center">&copy; 2025 Vedant Pain Management Clinic. All rights
+                        reserved. Designed & Developed By Brandingwaale Webtech</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
