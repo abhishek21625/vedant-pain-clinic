@@ -275,3 +275,16 @@ var gallerySwiperInstance = new Swiper(".gallery-swiper", {
     }
 });
 
+
+
+
+
+
+
+
+
+function setModalImage(btn) {
+    const src = btn.closest(".gallery-item").querySelector("img").src;
+    document.getElementById("modalImage").src = src;
+}
+
