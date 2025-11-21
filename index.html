@@ -101,30 +101,33 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img src="images/imgi_1_logo.png" alt="" class="">
-                </a>
-            </div>
 
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/imgi_1_logo.png" alt="">
+            </a>
+
+            <!-- Mobile Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
 
+                <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            <div class="navbar-collapse collapse" id="navbarNav">
-                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
+                    <!-- CONDITIONS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="conditionsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Conditions
                         </a>
-                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="conditionsDropdown">
                             <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
                             <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
                             <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
@@ -139,12 +142,13 @@
                         </ul>
                     </li>
 
+                    <!-- TREATMENTS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="treatmentsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Treatments
                         </a>
-                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="treatmentsDropdown">
                             <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
                                     Gasserian Ganglion RFA</a></li>
                             <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
@@ -154,15 +158,15 @@
                             <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy
                                     Block / Neurolysis / RFA</a></li>
                             <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac
-                                    joint Injection / Cooled RFA</a></li>
+                                    Joint Injection / Cooled RFA</a></li>
                             <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar
-                                    Intradiscal Cooled RFA / Biacuplasty</a></li>
+                                    Intradiscal Cooled RFA</a></li>
                             <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular
                                     Nerves Cooled RFA</a></li>
                             <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder
                                     Capsule Release Adhesiolysis RFA</a></li>
                             <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled
-                                    Radiofrequency Ablation (RFA)</a></li>
+                                    Radiofrequency Ablation</a></li>
                             <li><a class="dropdown-item"
                                     href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point
                                     Release</a></li>
@@ -176,28 +180,24 @@
                     <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
 
-                <ul class="navbar-nav d-lg-none">
-                    <li class="nav-item">
-                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
-                            Book Appointment
-                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                    <!-- Mobile Button -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn w-100">
+                            Book Appointment <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
                     </li>
                 </ul>
-
             </div>
 
-            <div class="d-none d-lg-block">
-                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
-                    Book Appointment
-                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
-                </a>
-            </div>
+            <!-- Desktop Button -->
+            <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn d-none d-lg-flex ms-3">
+                Book Appointment <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+            </a>
 
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -207,13 +207,15 @@
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="hero-content">
                         <div class="badge-tag" data-aos="fade-up">✓ Solutions for better health</div>
-                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Your Wellness, <span class="highlight">Our Mission</span></h1>
-                        <p class="hero-description"  data-aos="fade-up" data-aos-delay="200">
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Your Wellness, <span
+                                class="highlight">Our Mission</span></h1>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
                             We are dedicated to providing compassionate and professional healthcare services, tailored
                             to meet
                             your unique needs, so you can thrive and enjoy a healthier, more fulfilling life.
                         </p>
-                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn" data-aos="fade-up" data-aos-delay="">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn"
+                            data-aos="fade-up" data-aos-delay="">
                             Book Consultation
                             <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
@@ -270,64 +272,62 @@
     <section class="about-section">
         <div class="container">
             <div class="row align-items-center g-5">
-                <!-- Left Side - Image with Video Play Button -->
-                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                    <div class="image-container position-relative" data-aos="fade-right" data-aos-delay="">
+
+                <!-- Left Side Image -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="image-container" data-aos="fade-right">
                         <img src="images/about-img.jpg" alt="Doctor Professional" class="img-fluid rounded-image">
-                        <!-- <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div> -->
                     </div>
                 </div>
 
-                <!-- Right Side - Content -->
+                <!-- Right Side Content -->
                 <div class="col-lg-6 col-md-12">
-                    <!-- About Us Badge -->
-                    <div class="about-badge mb-3"  data-aos="fade-left" data-aos-delay="100">
+
+                    <!-- Badge -->
+                    <div class="about-badge" data-aos="fade-left" data-aos-delay="100">
                         <span class="badge-text">
-                            <i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i>About Us
+                            <i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i>
+                            About Us
                         </span>
                     </div>
 
-                    <!-- Main Heading -->
-                    <h1 class="main-heading mb-4" data-aos="fade-left" data-aos-delay="200">
+                    <!-- Heading -->
+                    <h1 class="main-heading" data-aos="fade-left" data-aos-delay="200">
                         Personalized, <span class="highlight">Exceptional Care</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="description"  data-aos="fade-left" data-aos-delay="300">
+                    <p class="description" data-aos="fade-left" data-aos-delay="300">
                         Providing the Highest Quality of Care and Comfort, Created Especially for Your Health, Safety,
-                        and Peace of Mind
+                        and Peace of Mind.
                     </p>
 
-                    <!-- Features Grid -->
-                    <div class="features-grid mb-5">
-                        <div class="feature-card"  data-aos="fade-up" data-aos-delay="100">
+                    <!-- Features -->
+                    <div class="features-grid">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="feature-icon">
                                 <i class="fas fa-flask-vial"></i>
                             </div>
-                            <h6 class="feature-title">Research and development</h6>
-                            <p class="feature-text">At Green Leaf Health, our R&D team drives innovation to improve
-                                health and well-being through advanced solutions and technology.</p>
+                            <h6 class="feature-title">Research & Development</h6>
+                            <p class="feature-text">Our R&D team drives innovation through advanced health solutions.
+                            </p>
                         </div>
 
-                        <div class="feature-card"  data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="feature-icon">
                                 <i class="fas fa-hospital"></i>
                             </div>
-                            <h6 class="feature-title">Advanced imaging services</h6>
-                            <p class="feature-text">Utilizing cutting-edge imaging technologies to ensure precise
-                                diagnosis and effective treatment planning tailored to patient needs.</p>
+                            <h6 class="feature-title">Advanced Imaging Services</h6>
+                            <p class="feature-text">Cutting-edge imaging for accurate diagnosis and treatment planning.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- View All Button -->
-                    <a href="about.html">
-                        <button class="btn btn-view-all" data-aos="fade-up" data-aos-delay="100">
-                            Know More
-                            <i class="fas fa-arrow-right ms-2"></i>
-                        </button>
+                    <!-- Button -->
+                    <a href="about.html" class="btn btn-view-all" data-aos="fade-up" data-aos-delay="300">
+                        Know More <i class="fas fa-arrow-right ms-2"></i>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -335,152 +335,145 @@
 
     <section class="services-section">
         <div class="container">
+            <!-- Header -->
             <div class="services-header">
                 <div class="services-label" data-aos="fade-up" data-aos-delay="100">Our Services</div>
-                <h2 class="services-title" data-aos="fade-up" data-aos-delay="200">Bring Your Health Journey With Key Wellness Services</h2>
+                <h2 class="services-title" data-aos="fade-up" data-aos-delay="200">Bring Your Health Journey With
+                    <span>Key Wellness Services</span></h2>
             </div>
 
+            <!-- Swiper -->
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper pt-3">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_3_sports.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_3_sports.png" alt="Sports Injuries Treatment">
+                            </div>
                             <h3 class="service-name">Sports Injuries Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p> -->
-                            <!-- <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
-                    <!-- Neurology (Featured) -->
+                    <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_7_neuralgic.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_7_neuralgic.png" alt="Neuralgic Pain Treatment">
+                            </div>
                             <h3 class="service-name">Neuralgic Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
-                    <!-- Radiology -->
+                    <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_8_fibromyalgia.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_8_fibromyalgia.png" alt="Fibromyalgia Treatment">
+                            </div>
                             <h3 class="service-name">Fibromyalgia Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
-                    <!-- Pulmonary -->
+                    <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_4_cancer.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_4_cancer.png" alt="Cancer Pain Treatment">
+                            </div>
                             <h3 class="service-name">Cancer Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
-                    <!-- Orthopedics -->
+                    <!-- Slide 5 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_9_back.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_9_back.png" alt="Back Pain Treatment">
+                            </div>
                             <h3 class="service-name">Back Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
-                    <!-- Dermatology -->
+                    <!-- Slide 6 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_10_slipped.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_10_slipped.png" alt="Slipped Disc Treatment">
+                            </div>
                             <h3 class="service-name">Slipped Disc Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 7 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_11_neck.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_11_neck.png" alt="Neck Pain Treatment">
+                            </div>
                             <h3 class="service-name">Neck Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 8 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_12_knee.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_12_knee.png" alt="Knee Pain Treatment">
+                            </div>
                             <h3 class="service-name">Knee Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 9 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_13_joint.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_13_joint.png" alt="Joint Pain Treatment">
+                            </div>
                             <h3 class="service-name">Joint Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 10 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_14_shoulder.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_14_shoulder.png" alt="Shoulder Pain Treatment">
+                            </div>
                             <h3 class="service-name">Shoulder Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 11 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_15_ankle.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_15_ankle.png" alt="Ankle & Heel Pain Treatment">
+                            </div>
                             <h3 class="service-name">Ankle & Heel Pain Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
 
+                    <!-- Slide 12 -->
                     <div class="swiper-slide">
-                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-icon"><img src="images/iconss/imgi_16_headache.png" alt=""></div>
+                        <div class="service-card" data-aos="fade-up">
+                            <div class="service-icon">
+                                <img src="images/iconss/imgi_16_headache.png" alt="Head Ache / Migraine Treatment">
+                            </div>
                             <h3 class="service-name">Head Ache / Migraine Treatment</h3>
-                            <!-- <p class="service-description">Tortor posuere ac ut consequat semper viverra nam. Orci ac
-                                auctor
-                                augue mauris augue neque gravida in.</p>
-                            <a href="#" class="service-link">View Details <span>→</span></a> -->
                         </div>
                     </div>
-
                 </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next" data-aos="fade-left"></div>
+                <div class="swiper-button-prev" data-aos="fade-right"></div>
+
+                <!-- Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
+        </div>
     </section>
 
 
@@ -565,9 +558,10 @@
             <div class="blog-header">
                 <div>
                     <div class="badge-custom" data-aos="fade-right" data-aos-delay="100">Our latest news</div>
-                    <h1 class="blog-title" data-aos="fade-up" data-aos-delay="200">Check out our most recent health blogs.</h1>
+                    <h1 class="blog-title" data-aos="fade-right" data-aos-delay="200">Check out our most recent health
+                        blogs.</h1>
                 </div>
-                <a href="blogs.html" class="view-all-btn" data-aos="fade-left" data-aos-delay="100">View all blogs</a>
+                <a href="blogs.html" class="view-all-btn" data-aos="fade-left" data-aos-delay="300">View all blogs</a>
             </div>
 
             <!-- Blog Cards Row -->
@@ -653,8 +647,7 @@
                     <div class="testimonials-track" id="testimonialsTrack">
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt=""
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -668,15 +661,15 @@
                                 well-managed.
                             </p>
                             <h3 class="testimonial-name">Suhaan Sharma</h3>
-                            <a style="text-decoration: none;" href="https://maps.app.goo.gl/54BEVXDiEaYeuMLH7">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt=""
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -689,15 +682,15 @@
                                 without discomfort. Totally changed how I feel during the day.
                             </p>
                             <h3 class="testimonial-name">Sumant Padhy</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt="Ronald Richards"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="Ronald Richards" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -710,14 +703,14 @@
                                 explained in simple language, which helped ease my anxiety
                             </p>
                             <h3 class="testimonial-name">Rabinarayana Mohapatra</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/female.png" alt=""
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -730,14 +723,14 @@
                                 for chronic pain. Thier approach is very thoughtful and effective.
                             </p>
                             <h3 class="testimonial-name">Ishita Singhvi</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/female.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -750,14 +743,14 @@
                                 the moment I entered, the staff....
                             </p>
                             <h3 class="testimonial-name">Radhika bansal</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -771,14 +764,14 @@
                                 holistic approach, making recovery effective and supportive. Highly recommend!
                             </p>
                             <h3 class="testimonial-name">Amit Chandeliya</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -792,14 +785,14 @@
                                 Dr Mohit.
                             </p>
                             <h3 class="testimonial-name">Kapil Kumar</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/male.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/male.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -812,14 +805,14 @@
                                 doctors and staff were so good with their skills. Thanks Vedant Pain Management Clinic.
                             </p>
                             <h3 class="testimonial-name">Sunil Chamola</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/female.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -832,14 +825,14 @@
                                 Delhi NCR. Very meticulous and professional.
                             </p>
                             <h3 class="testimonial-name">Priyanshi Verma</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
 
                         <div class="testimonial-card">
-                            <img src="images/female.png" alt="Robert Fox"
-                                class="testimonial-image">
+                            <img src="images/female.png" alt="Robert Fox" class="testimonial-image">
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -852,7 +845,8 @@
                                 out to be the perfect choice. Great experience and a lot of improvement without surgery.
                             </p>
                             <h3 class="testimonial-name">Muskan Hetawal</h3>
-                            <a style="text-decoration: none;" href="">
+                            <a style="text-decoration: none;"
+                                href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1">
                                 <p class="testimonial-address">View Full Review</p>
                             </a>
                         </div>
@@ -869,7 +863,7 @@
 
             <!-- Header + Controls -->
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="gallery-title mb-0"  data-aos="fade-right" data-aos-delay="100">
+                <h2 class="gallery-title mb-0" data-aos="fade-right" data-aos-delay="100">
                     Our <span class="highlight">Gallery</span>
                 </h2>
                 <div class="gallery-controls">
@@ -1160,7 +1154,8 @@
                     <div class="badge-custom" data-aos="fade-right" data-aos-delay="100">Video Gallery</div>
                     <h1 class="blog-title" data-aos="fade-right" data-aos-delay="100">Check out our latest videos</h1>
                 </div>
-                <a href="blogs.html" class="view-all-btn" data-aos="fade-left" data-aos-delay="100">View all videos</a>
+                <a href="https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&hl=en&authuser=0&sxsrf=AE3TifP6wMChJdJqmnPWsGMAaKnEYoT9hQ:1763376415447&kgmid=/g/11wr3msz22&q=Vedant+Pain+Management+Clinic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=35e44e7eec20926e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
+                    class="view-all-btn" data-aos="fade-left" data-aos-delay="100">View all videos</a>
             </div>
 
             <!-- Main Video Grid -->
@@ -1360,9 +1355,10 @@
                 <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
                     <div class="contact-content">
                         <h2 data-aos="fade-right" data-aos-delay="100">We're Here for You!</h2>
-                        <p class="contact-subtitle" data-aos="fade-right" data-aos-delay="200">Reach out for any queries or appointments</p>
+                        <p class="contact-subtitle" data-aos="fade-right" data-aos-delay="200">Reach out for any queries
+                            or appointments</p>
 
-                        <div class="contact-item"  data-aos="fade-right" data-aos-delay="300">
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
                             <i class="fas fa-phone-alt"></i>
                             <span>+91 8171244512</span>
                         </div>
@@ -1389,7 +1385,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <div class="map-container"  data-aos="fade-up" data-aos-delay="100">
+                    <div class="map-container" data-aos="fade-up" data-aos-delay="100">
                         <div class="custom-map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14041.544950111791!2d77.33104!3d28.3774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddc837bed5df%3A0xa1c9670cdb264f7a!2sVedant%20Pain%20Management%20Clinic!5e0!3m2!1sen!2sin!4v1762953675868!5m2!1sen!2sin"
@@ -1408,7 +1404,8 @@
         <div class="container">
             <div class="cta-content">
                 <h2 data-aos="fade-up" data-aos-delay="100">Get Expert Medical Care at<br>Your Fingertips!</h2>
-                <p data-aos="fade-up" data-aos-delay="200">Access top doctors and healthcare services anytime, anywhere. Book appointments,<br>consult online,
+                <p data-aos="fade-up" data-aos-delay="200">Access top doctors and healthcare services anytime, anywhere.
+                    Book appointments,<br>consult online,
                     and prioritize your well-being today!</p>
 
                 <div class="cta-buttons">
@@ -1523,5 +1520,4 @@
     </script>
 
 </body>
-
 </html>

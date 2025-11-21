@@ -221,32 +221,35 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+   <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img src="images/imgi_1_logo.png" alt="" class="">
-                </a>
-            </div>
 
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/imgi_1_logo.png" alt="">
+            </a>
+
+            <!-- Mobile Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
 
+                <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            <div class="navbar-collapse collapse" id="navbarNav">
-                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
+                    <!-- CONDITIONS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="servicesDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="conditionsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Conditions
                         </a>
-                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="servicesDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="conditionsDropdown">
                             <li><a class="dropdown-item" href="neck-pain.html">Neck Pain</a></li>
                             <li><a class="dropdown-item" href="trigeminal-neuralgia.html">Trigeminal Neuralgia</a></li>
                             <li><a class="dropdown-item" href="back-pain.html">Back Pain</a></li>
@@ -261,51 +264,58 @@
                         </ul>
                     </li>
 
+                    <!-- TREATMENTS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="treatmentsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Treatments
                         </a>
-                        <ul class="dropdown-menu fade-down shadow" aria-labelledby="galleryDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="treatmentsDropdown">
                             <li><a class="dropdown-item" href="trigeminal-gasserian-ganglion-rfa.html">Trigeminal /
                                     Gasserian Ganglion RFA</a></li>
                             <li><a class="dropdown-item" href="cervical-epidural.html">Cervical Epidural</a></li>
                             <li><a class="dropdown-item" href="facet.html">Facet</a></li>
-                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal Epidural Adhesiolysis</a></li>
-                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy Block / Neurolysis / RFA</a></li>
-                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac joint Injection / Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar Intradiscal Cooled RFA / Biacuplasty</a></li>
-                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular Nerves Cooled RFA</a></li>
-                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder Capsule Release Adhesiolysis RFA</a></li>
-                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled Radiofrequency Ablation (RFA)</a></li>
-                            <li><a class="dropdown-item" href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point Release</a></li>
-                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a></li>
-                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal Cord Stimulator and Intrathecal Pump</a></li>
+                            <li><a class="dropdown-item" href="transforaminal-epidural-adhesiolysis.html">Transforaminal
+                                    Epidural Adhesiolysis</a></li>
+                            <li><a class="dropdown-item" href="sympathectomy-block-neurolysis-rfa.html">Sympathectomy
+                                    Block / Neurolysis / RFA</a></li>
+                            <li><a class="dropdown-item" href="sacroiliac-joint-injection-cooled-rfa.html">Sacroiliac
+                                    Joint Injection / Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="bipolar-intradiscal-cooled-rfa-biacuplasty.html">Bipolar
+                                    Intradiscal Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="knee-genicular-nerves-cooled-rfa.html">Knee Genicular
+                                    Nerves Cooled RFA</a></li>
+                            <li><a class="dropdown-item" href="shoulder-capsule-release-adhesiolysis-rfa.html">Shoulder
+                                    Capsule Release Adhesiolysis RFA</a></li>
+                            <li><a class="dropdown-item" href="hip-cooled-radiofrequency-ablation.html">Hip Cooled
+                                    Radiofrequency Ablation</a></li>
+                            <li><a class="dropdown-item"
+                                    href="musculoskeletal-trigger-point-release.html">Musculoskeletal Trigger Point
+                                    Release</a></li>
+                            <li><a class="dropdown-item" href="provocative-discography.html">Provocative Discography</a>
+                            </li>
+                            <li><a class="dropdown-item" href="spinal-cord-stimulator-and-intrathecal-pump.html">Spinal
+                                    Cord Stimulator and Intrathecal Pump</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
 
-                <ul class="navbar-nav d-lg-none">
-                    <li class="nav-item">
-                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
-                            Book Appointment
-                            <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+                    <!-- Mobile Button -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn w-100">
+                            Book Appointment <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
                         </a>
                     </li>
                 </ul>
-
             </div>
 
-            <div class="d-none d-lg-block">
-                <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn ms-lg-3">
-                    Book Appointment
-                    <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
-                </a>
-            </div>
+            <!-- Desktop Button -->
+            <a href="https://vedantpainclinic.com/appointment/appointment.php" class="book-btn d-none d-lg-flex ms-3">
+                Book Appointment <div class="btn-icon"><i class="fas fa-arrow-right"></i></div>
+            </a>
 
         </div>
     </nav>
